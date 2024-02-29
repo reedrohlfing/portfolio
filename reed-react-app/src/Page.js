@@ -26,15 +26,13 @@ const Page = () => {
         }
     };
 
-    return ( 
-        <div>
+    return (
           <nav className="page">
             <Accordion setActiveSection={setActiveSection} />
+            <div className="section-content">
+              {renderSection()}
+            </div>
           </nav>
-          <div className="section-content">
-            {renderSection()}
-          </div>
-        </div>
       );
 }
  

@@ -36,15 +36,22 @@ h2 {
   display: none;
 }
 
+.flex {
+  display: flex;
+}
+
 .show {
   display: block;
+}
+
+.transparent {
+  color: transparent;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 0.5px solid;
 }
 
 .name-background {
@@ -52,20 +59,33 @@ h2 {
   max-width: 75vw;
 }
 
+.name-text {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: clamp(16px, 2vw, 15vw);
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .download-resume {
-  margin: 20px;
+  margin: 5px;
 }
 
 .button {
   height: 43px;
   width: 43px;
+  padding:6px;
+  border-radius: 20%;
+  border: 1px solid transparent;
 }
 
 .accordion {
   display: flex;
   justify-content: center;
-  padding: 15px;
-  gap: 20px;
+  padding: 6px;
+  gap: 3px;
 }
 
 .accordion-subheader {
@@ -78,13 +98,14 @@ h2 {
 }
 
 .accordion-link {
-  max-width: 45px;
+  max-width: 60px;
 }
 
 .accordion-link > h3 {
   font-size: 11px;
   margin: 0;
   font-weight:500;
+  text-align: center;
 }
 
 .accordion-subsection {
@@ -92,11 +113,23 @@ h2 {
   padding: 20px;
 }
 
+.title-placeholder {
+  position:fixed;
+  top: 0px;
+  padding:20px 40px;
+}
+
+.tile {
+  height: min-content;
+  margin:20px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+
 .tile-header {
   width: auto;
   position: static;
   padding: 40px;
-  margin: 20px 20px 0 20px;
   border-radius: 20px 20px 0 0;
   text-align: center;
 }
@@ -104,7 +137,6 @@ h2 {
 .tile-desc {
   position: static;
   padding: 40px 40px 40px 40px;
-  margin: 0 20px 20px 20px;
   border-radius: 0 0 20px 20px;
   width:auto;
   text-align: center;
@@ -126,14 +158,40 @@ h2 {
   grid-template-columns: 1fr 1fr;
 }
 
-.name-text {
-  margin: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: clamp(16px, 2vw, 15vw);
-  white-space: nowrap; 
-  overflow: hidden;
-  text-overflow: ellipsis;
+.corporate-job {
+  width: auto;
+  padding: 40px 60px;
+  margin-bottom: 20px;
+}
+
+.job-overview {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+}
+
+.job-img {
+  width: 20vw;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.job-title {
+  width: 50vw
+}
+
+.job-desc {
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.desc-list {
+  display: block;
+  width: 75%;
 }
 
 .background-img {
@@ -150,5 +208,8 @@ h2 {
   .sdsu-tiles {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .desc-list {
+    width: 100%;
   }
 }

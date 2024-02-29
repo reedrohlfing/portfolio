@@ -1,7 +1,6 @@
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme, GlobalStyles } from './Theme';
 import Navbar from './Navbar';
-import Accordion from './Accordion';
 import Page from './Page';
 
 function App() {
