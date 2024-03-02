@@ -93,6 +93,12 @@ export const GlobalStyles = createGlobalStyle`
   .tile-desc {
     background-color: ${props => props.theme.colors.tileBackground};
   }
+  .skill-list {
+    background-color: ${props => props.theme.colors.tileBackground};
+  }
+  .spotify-tracklist {
+    background-color: ${props => props.theme.colors.tileBackground};
+  }
   .link {
     color: ${props => props.theme.colors.button};
   }

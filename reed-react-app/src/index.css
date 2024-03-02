@@ -63,7 +63,7 @@ h2 {
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
-  font-size: clamp(16px, 2vw, 15vw);
+  font-size: 30px;
   white-space: nowrap; 
   overflow: hidden;
   text-overflow: ellipsis;
@@ -156,6 +156,7 @@ h2 {
 .sdsu-tiles {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 20px 10vw;
 }
 
 .corporate-job {
@@ -189,6 +190,10 @@ h2 {
   padding: 20px 0;
 }
 
+.link {
+  cursor: pointer;
+}
+
 .desc-list {
   display: block;
   width: 75%;
@@ -201,15 +206,55 @@ h2 {
   z-index: -1;
 }
 
+.skill-title {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.skill-list {
+  width: auto;
+  padding: 40px 60px;
+  margin-bottom: 20px;
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  align-items: end;
+  gap: 30px;
+  padding: 0 10vw;
+}
+
+.sw-img {
+  width: 15vw;
+}
+
+.spotify-tracklist {
+padding: 20px 10vw;
+}
+
+.spotify-track {
+  border-radius: 12px;
+}
+
 @media screen and (max-width: 767px) {
-  .name-text {
-    font-size: clamp(16px, 6vw, 15vw);
-  }
   .sdsu-tiles {
-    display: grid;
     grid-template-columns: 1fr;
   }
   .desc-list {
     width: 100%;
   }
+  .skill-list {
+    padding: 40px;
+  }
+  .skills {
+    gap: 10px;
+    padding: 0;
+  }
+  .sdsu-tiles {
+    padding: 20px 0;
+  }
+  .spotify-tracklist {
+    padding: 20px 10px;
+    }
 }

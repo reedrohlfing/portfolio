@@ -48,7 +48,7 @@ const Accordion = ({ setActiveSection }) => {
                 <div className="accordion-subheader" onMouseOver={() => changeIcon('music')} onMouseOut={() => resetIcon('music')}>
                     <div className="accordion-link">
                         <img id="music" className="button" src="music-filled.png" alt="https://img.icons8.com/ios/150/878787/spotify--v1.png"></img>
-                        <h3>playlists</h3> 
+                        <h3>sound</h3> 
                     </div>
                 </div>
             </section>
