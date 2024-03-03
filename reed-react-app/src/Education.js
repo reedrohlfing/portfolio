@@ -10,7 +10,7 @@ const Education = () => {
                 <h3>Class of 2020</h3>
                 <p>Emphasis in Communication Systems</p>
             </div>
-            <div className="sdsu-tiles">   
+            <div className="tiles">   
                 <div className="tile">
                     <a href="https://foundation.sdsu.edu/" target="_blank" rel="noreferrer">
                         <div className='tile-header' id="sdsu-red">

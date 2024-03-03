@@ -14,6 +14,7 @@ export const darkTheme = {
     aer: '#231f20',
     mslc: '#c4c4c4',
     greenfestGreen: '#9DBD6A',
+    windanMarket: '#33333b',
   },
   pictures: {
     educationBackground: "sdsu_student_union_dark_extended.jpg",
@@ -35,6 +36,7 @@ export const lightTheme = {
     aer: '#231f20',
     mslc: '#c4c4c4',
     greenfestGreen: '#9DBD6A',
+    windanMarket: '#33333b',
   },
   pictures: {
     educationBackground: "sdsu_student_union_extended.jpg",
@@ -113,6 +115,9 @@ export const GlobalStyles = createGlobalStyle`
   }
   #greenfest-green {
     background-color: ${props => props.theme.colors.greenfestGreen};
+  }
+  #windan {
+    background-color: ${props => props.theme.colors.windanMarket};
   }
   .viasat {
     background-color: ${props => props.theme.pictures.viasat};
