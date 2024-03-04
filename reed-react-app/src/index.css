@@ -245,12 +245,6 @@ padding: 20px 10vw;
 }
 
 @media screen and (max-width: 767px) {
-<<<<<<< Updated upstream
-=======
-  .tiles {
-    grid-template-columns: 1fr;
-  }
->>>>>>> Stashed changes
   .desc-list {
     width: 100%;
   }
