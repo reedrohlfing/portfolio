@@ -238,9 +238,6 @@ padding: 20px 10vw;
 }
 
 @media screen and (max-width: 767px) {
-  .sdsu-tiles {
-    grid-template-columns: 1fr;
-  }
   .desc-list {
     width: 100%;
   }
@@ -252,6 +249,7 @@ padding: 20px 10vw;
     padding: 0;
   }
   .tiles {
+    grid-template-columns: 1fr;
     padding: 20px 0;
   }
   .spotify-tracklist {
