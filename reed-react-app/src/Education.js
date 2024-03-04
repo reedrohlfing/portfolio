@@ -10,6 +10,11 @@ const Education = () => {
                 <h3>Class of 2020</h3>
                 <p>Emphasis in Communication Systems</p>
             </div>
+            <div className="degree">
+                <div>
+                    <img id="grad-photo" src='grad-photo.jpg' alt="grad photo"></img>
+                </div>
+            </div>
             <div className="tiles">   
                 <div className="tile">
                     <a href="https://foundation.sdsu.edu/" target="_blank" rel="noreferrer">

@@ -147,10 +147,17 @@ h2 {
   max-width: 300px;
 }
 
+#grad-photo { 
+  max-height: 50vh;
+  max-width: 50vw;
+  border-radius: 20px;
+}
+
 .degree {
   width: auto;
   text-align: center;
-  padding: 20px;
+  padding: 20px 10vw;
+  margin-bottom: 20px;
 }
 
 .tiles {
@@ -238,6 +245,12 @@ padding: 20px 10vw;
 }
 
 @media screen and (max-width: 767px) {
+<<<<<<< Updated upstream
+=======
+  .tiles {
+    grid-template-columns: 1fr;
+  }
+>>>>>>> Stashed changes
   .desc-list {
     width: 100%;
   }
