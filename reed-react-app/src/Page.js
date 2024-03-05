@@ -5,6 +5,7 @@ import Industry from './Industry';
 import Music from './Music';
 import Stack from './Stack';
 import Accordion from './Accordion';
+import Contact from './Contact';
 
 const Page = () => {
     const [activeSection, setActiveSection] = useState(null);
@@ -22,7 +23,7 @@ const Page = () => {
           case 'music':
             return <Music />;
           default:
-            return null;
+            return <Contact />;
         }
     };
 

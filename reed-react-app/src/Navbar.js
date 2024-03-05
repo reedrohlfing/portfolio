@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 
 const Navbar = () => {
+    function handleNameClick() {
+        window.location.reload();
+    }
     useEffect(() => {
         const handleScroll = () => {
             // Check if the user has scrolled to Title
@@ -22,7 +25,7 @@ const Navbar = () => {
     return ( 
         <nav className="navbar">
             <div className="name-background">
-                <p className='name-text'>Reed Rohlfing</p>
+                <p className='name-text' onClick={handleNameClick}>Reed Rohlfing</p>
             </div>
             <div className="download-resume">
                 <a className="download-button" href="https://drive.google.com/uc?export=download&id=1Lv7nX1YFuRRJ5PlWumife6fKR4cLm0S-">

@@ -4,10 +4,11 @@ export const darkTheme = {
   colors: {
     background: 'black',
     button: '#4ca9ff',
+    toggle: '#0071e3',
     navbarTitle: 'white',
     navbarBackground: '#141414',
     subTitle: 'white',
-    accordionBackground: '#231f20',
+    accordionBackground: 'rgb(255,255,255,0.2)',
     subText: 'white',
     tileBackground: '#141414',
     sdsuRed: '#a7192f',
@@ -26,10 +27,11 @@ export const lightTheme = {
   colors: {
     background: 'white',
     button: '#4ca9ff',
+    toggle: '#0071e3',
     navbarTitle: 'black',
     navbarBackground: '#f5f5f7',
     subTitle: 'white',
-    accordionBackground: 'rgb(14,12,13,0.5)',
+    accordionBackground: 'rgb(0,0,0,0.5)',
     subText: 'rgb(29, 29, 31);',
     tileBackground: '#f5f5f7',
     sdsuRed: '#a7192f',
@@ -64,7 +66,6 @@ export const GlobalStyles = createGlobalStyle`
     color: ${props => props.theme.colors.navbarTitle};
   }
   .navbar {
-    background-color: ${props => props.theme.colors.navbarBackground};
     color: ${props => props.theme.colors.navbarTitle};
   }
   .accordion {
@@ -101,6 +102,9 @@ export const GlobalStyles = createGlobalStyle`
   .spotify-tracklist {
     background-color: ${props => props.theme.colors.tileBackground};
   }
+  .contact-info {
+    background-color: ${props => props.theme.colors.tileBackground};
+  }
   .link {
     color: ${props => props.theme.colors.button};
   }
@@ -124,5 +128,18 @@ export const GlobalStyles = createGlobalStyle`
   }
   .download {
     background-color: transparent;
+  }
+  .linkedin:hover {
+    color: ${props => props.theme.colors.button};
+  }
+  .theme-switch {
+    border-color: ${props => props.theme.colors.toggle};
+  }
+  .switch-text {
+    color: ${props => props.theme.colors.toggle};
+  }
+  .auto {
+    color: white;
+    background-color: ${props => props.theme.colors.toggle};
   }
 `;

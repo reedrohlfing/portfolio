@@ -67,6 +67,7 @@ h2 {
   white-space: nowrap; 
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 
 .download-resume {
@@ -79,6 +80,16 @@ h2 {
   padding:6px;
   border-radius: 20%;
   border: 1px solid transparent;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page {
+  flex: 1;
 }
 
 .accordion {
@@ -244,6 +255,47 @@ padding: 20px 10vw;
   border-radius: 12px;
 }
 
+.contact-info {
+  padding: 20px 10vw;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.theme-switch {
+  display: inline-flex;
+  padding: 1px;
+  border: 1px solid;
+  border-radius: 12px;
+}
+
+.content input[type="radio"] {
+  position: absolute;
+  overflow: hidden;
+  appearance: none;
+  margin: 0;
+}
+
+.switch-text {
+  box-sizing: border-box;
+  padding: 1px 6px;
+  min-width: 42px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.footer {
+  flex-shrink: 0;
+  bottom: 0px;
+  width: 100%;
+  padding: 15px 0;
+  margin: 0;
+  text-align: center;
+}
+
 @media screen and (max-width: 767px) {
   .desc-list {
     width: 100%;
@@ -261,5 +313,9 @@ padding: 20px 10vw;
   }
   .spotify-tracklist {
     padding: 20px 10px;
-    }
+  }
+  .contact-info {
+    padding: 20px 10px;
+  }
+
 }

@@ -12,14 +12,14 @@ const Education = () => {
             </div>
             <div className="degree">
                 <div>
-                    <img id="grad-photo" src='grad-photo.jpg' alt="grad photo"></img>
+                    <img id="grad-photo" src='grad-photo.jpg' alt="grad"></img>
                 </div>
             </div>
             <div className="tiles">   
                 <div className="tile">
                     <a href="https://foundation.sdsu.edu/" target="_blank" rel="noreferrer">
                         <div className='tile-header' id="sdsu-red">
-                            <img className="tile-img" src='sdsu-research.jpg' alt="sdsu-research logo"></img>
+                            <img className="tile-img" src='sdsu-research.jpg' alt="sdsu-research"></img>
                         </div>
                     </a>
                     <div className="tile-desc">
@@ -32,7 +32,7 @@ const Education = () => {
                 <div className="tile">
                     <a href="https://www.aztecelectricracing.com/" target="_blank" rel="noreferrer">
                         <div className='tile-header' id="aer">
-                            <img className="tile-img" src='aer.png' alt="aer logo"></img>
+                            <img className="tile-img" src='aer.png' alt="aer"></img>
                         </div>
                     </a>
                     <div className="tile-desc">
@@ -45,7 +45,7 @@ const Education = () => {
                 <div className="tile">
                     <a href="https://mslc.sdsu.edu/" target="_blank" rel="noreferrer">
                         <div className='tile-header' id="mslc">
-                            <img className="tile-img" src='mslc.png' alt="mslc logo"></img>
+                            <img className="tile-img" src='mslc.png' alt="mslc"></img>
                         </div>
                     </a>
                     <div className="tile-desc">
@@ -58,7 +58,7 @@ const Education = () => {
                 <div className="tile">
                     <a href="https://as.sdsu.edu/greenfest/" target="_blank" rel="noreferrer">
                         <div className='tile-header' id="greenfest-green">
-                            <img className="tile-img" src='greenfest-logo-white.png' alt="greenfest logo"></img>
+                            <img className="tile-img" src='greenfest-logo-white.png' alt="greenfest"></img>
                         </div>
                     </a>
                     <div className="tile-desc">
