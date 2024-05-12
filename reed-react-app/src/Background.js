@@ -99,7 +99,7 @@ const Background = () => {
                     <div className="tile-desc">
                         <h2>SDSU Math and Stats Learning Center</h2>
                         <h3>Tutor and TA</h3>
-                        <p>Tutored students in a variety of courses, ranging from College Algebra to Calculus III.</p>
+                        <p>Tutored students in a variety of courses, ranging from College Algebra to Calculus III. Engaged students by leading weekly problem-solving discussions to promote understanding and collaboration.</p>
                     </div>
                 </div>
 
