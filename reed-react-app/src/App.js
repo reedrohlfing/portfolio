@@ -5,6 +5,7 @@ import Page from './Page';
 
 function App() {
 
+  const port = process.env.PORT || 6001;
   const [theme, setTheme] = useState('auto');
 
   // Function to toggle between light and dark themes
