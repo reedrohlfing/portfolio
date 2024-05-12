@@ -1,38 +1,57 @@
-import { useState } from 'react';
-import Code from './Code';
-import Education from './Education';
-import Industry from './Industry';
+import { useState, useEffect } from 'react';
+import Background from './Background';
 import Music from './Music';
-import Stack from './Stack';
 import Accordion from './Accordion';
 import Contact from './Contact';
+import Title from './Title';
+import Projects from './Projects';
 
 const Page = () => {
-    const [activeSection, setActiveSection] = useState(null);
+    const [activeSection, setActiveSection] = useState('projects');
 
     const renderSection = () => {
         switch (activeSection) {
-          case 'education':
-            return <Education />;
-          case 'industry':
-            return <Industry />;
-          case 'stack':
-            return <Stack />;
-          case 'code':
-            return <Code />;
+          case 'projects':
+            return <Projects />;
+          case 'background':
+            return <Background />;
           case 'music':
             return <Music />;
           default:
-            return <Contact />;
+            return <Projects />;
         }
     };
 
+    // Keep accordion at the top on scroll
+    useEffect(() => {
+      const handleScroll = () => {
+          // Check if the user has scrolled to Title
+          const accordionPlaceholder = document.querySelector('.accordion-placeholder')
+          const accordionDistance = document.querySelector('.main-title').scrollHeight;
+          if (window.scrollY > accordionDistance) {
+              accordionPlaceholder.classList.remove('hide');
+          } else {
+              accordionPlaceholder.classList.add('hide');
+          }
+      };
+
+      window.addEventListener('scroll', handleScroll);
+    }, []);
+
     return (
           <nav className="page">
-            <Accordion setActiveSection={setActiveSection} />
+            <Title />
+            <div className='accordion-og'>
+              <Accordion activeSection={activeSection} setActiveSection={setActiveSection} />
+            </div>
+            <div className='accordion-placeholder hide'>
+              <Accordion activeSection={activeSection} setActiveSection={setActiveSection} />
+            </div>
+            
             <div className="section-content">
               {renderSection()}
             </div>
+            <Contact />
           </nav>
       );
 }

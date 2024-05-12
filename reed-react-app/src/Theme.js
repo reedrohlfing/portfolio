@@ -9,13 +9,16 @@ export const darkTheme = {
     navbarBackground: '#141414',
     subTitle: 'white',
     accordionBackground: 'rgb(255,255,255,0.2)',
-    subText: 'white',
+    subText: 'rgb(255,255,255,0.6)',
     tileBackground: '#141414',
     sdsuRed: '#a7192f',
     aer: '#231f20',
     mslc: '#c4c4c4',
     greenfestGreen: '#9DBD6A',
     windanMarket: '#33333b',
+    five: '#4800FF',
+    inProgFont: 'black',
+    inProgBackground: '#04CA00',
   },
   pictures: {
     educationBackground: "sdsu_student_union_dark_extended.jpg",
@@ -30,15 +33,18 @@ export const lightTheme = {
     toggle: '#0071e3',
     navbarTitle: 'black',
     navbarBackground: '#f5f5f7',
-    subTitle: 'white',
-    accordionBackground: 'rgb(0,0,0,0.5)',
-    subText: 'rgb(29, 29, 31);',
+    subTitle: 'black',
+    accordionBackground: 'rgb(0,0,0,0.1)',
+    subText: 'rgb(0,0,0,0.4)',
     tileBackground: '#f5f5f7',
     sdsuRed: '#a7192f',
     aer: '#231f20',
     mslc: '#c4c4c4',
     greenfestGreen: '#9DBD6A',
     windanMarket: '#33333b',
+    five: '#4800FF',
+    inProgFont: 'white',
+    inProgBackground: '#04CA00',
   },
   pictures: {
     educationBackground: "sdsu_student_union_extended.jpg",
@@ -65,25 +71,44 @@ export const GlobalStyles = createGlobalStyle`
   p {
     color: ${props => props.theme.colors.navbarTitle};
   }
-  .navbar {
+  .main-title {
     color: ${props => props.theme.colors.navbarTitle};
   }
+  // .section-title {
+  //   background-color: ${props => props.theme.colors.tileBackground};
+  // }
   .accordion {
-    background-color: ${props => props.theme.colors.accordionBackground};
+    // background-color: ${props => props.theme.colors.accordionBackground};
+    // border: 1px solid ${props => props.theme.colors.navbarTitle};
+  }
+  .activeTab {
+    background-color: ${props => props.theme.colors.tileBackground};
+    // border: 1px solid ${props => props.theme.colors.navbarTitle};
+  }
+  .activeTab > .accordion-subheader > .accordion-link > h3 {
+    color: ${props => props.theme.colors.subTitle};
   }
   .button:hover {
     border-color: ${props => props.theme.colors.button};
   }
-  .accordion-subheader > .accordion-link > h3 {
-    color: ${props => props.theme.colors.subTitle};
-  }
-  .accordion-subheader > .accordion-link > h3: hover {
-    color: ${props => props.theme.colors.button};
-  }
-  .accordion-subsection {
+  // .accordion-subheader > .accordion-link > h3 {
+  //   color: ${props => props.theme.colors.background};
+  // }
+  // .accordion-subheader > .accordion-link > h3: hover {
+  //   color: ${props => props.theme.colors.button};
+  // }
+  .accordion-subheader: hover {
     background-color: ${props => props.theme.colors.navbarBackground};
-    color: ${props => props.theme.colors.subText};
   }
+  #in-progress {
+    font-size: 14px;
+    border-radius: 11px;
+    background-color: ${props => props.theme.colors.inProgBackground};
+    color: ${props => props.theme.colors.inProgFont};
+    padding: 7px;
+    margin-bottom: 25px;
+  }
+
   .degree {
     background-color: ${props => props.theme.colors.tileBackground};
   }
@@ -96,13 +121,17 @@ export const GlobalStyles = createGlobalStyle`
   .tile-desc {
     background-color: ${props => props.theme.colors.tileBackground};
   }
+  .sub-text {
+    font-size: 12px;
+    color: ${props => props.theme.colors.subText};
+  }
   .skill-list {
     background-color: ${props => props.theme.colors.tileBackground};
   }
   .spotify-tracklist {
     background-color: ${props => props.theme.colors.tileBackground};
   }
-  .contact-info {
+  .contact {
     background-color: ${props => props.theme.colors.tileBackground};
   }
   .link {
@@ -123,6 +152,9 @@ export const GlobalStyles = createGlobalStyle`
   #windan {
     background-color: ${props => props.theme.colors.windanMarket};
   }
+  #five {
+    background-color: ${props => props.theme.colors.five};
+  }
   .viasat {
     background-color: ${props => props.theme.pictures.viasat};
   }
@@ -141,5 +173,8 @@ export const GlobalStyles = createGlobalStyle`
   .auto {
     color: white;
     background-color: ${props => props.theme.colors.toggle};
+  }
+  .footer {
+    background-color: ${props => props.theme.colors.tileBackground};
   }
 `;
