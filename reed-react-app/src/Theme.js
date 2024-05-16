@@ -158,4 +158,7 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${props => props.theme.colors.windanMarket};
     color: white;
   }
+  .scroll-to-top:hover {
+    background-color: ${props => props.theme.colors.accordionBackground};
+  }
 `;

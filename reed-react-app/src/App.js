@@ -9,6 +9,10 @@ function App() {
   const port = process.env.PORT || 6001;
   const [theme, setTheme] = useState('auto');
 
+  function scrollToTop() {
+    window.scrollTo(0, 0);
+  }
+
   // Function to toggle between light and dark themes
   const toggleTheme = (newTheme) => {
     setTheme(newTheme);
@@ -36,6 +40,7 @@ function App() {
       <div className="App">
         <div className="content">
           <Page />
+          <h1 className='scroll-to-top div-background link' onClick={scrollToTop}>&#x2191;</h1>
           <Contact />
           {/* Light/Dark/Auto mode switch */}
           <div className='footer div-background'>

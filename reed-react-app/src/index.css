@@ -353,6 +353,17 @@ padding: 20px 10vw;
   border-radius: 12px;
 }
 
+.scroll-to-top {
+  align-self: flex-end;
+  text-align: center;
+  border-radius: 25px;
+  margin: 20px;
+  margin-right: 40px;
+  padding:25px;
+  padding-top: 22px;
+  width: fit-content;
+}
+
 .contact {
   margin-top: 20px;
 }
@@ -493,6 +504,9 @@ padding: 20px 10vw;
   }
   .spotify-tracklist {
     padding: 20px 10px;
+  }
+  .scroll-to-top {
+    margin-right: 20px;
   }
   .contact-variables {
     align-items: center;
