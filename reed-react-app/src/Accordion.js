@@ -8,7 +8,7 @@ const Accordion = ({ activeSection, setActiveSection }) => {
         <nav className="accordion">
             <section 
                 onClick={() => toggleCategory('projects')}
-                className={`${activeSection === 'projects' ? 'activeTab' : ''}`}
+                className={`${activeSection === 'projects' ? 'activeTab div-background' : ''}`}
             >
                 <div className="accordion-subheader">
                     <div className="accordion-link">
@@ -18,7 +18,7 @@ const Accordion = ({ activeSection, setActiveSection }) => {
             </section>
             <section 
                 onClick={() => toggleCategory('background')}
-                className={`${activeSection === 'background' ? 'activeTab' : ''}`}
+                className={`${activeSection === 'background' ? 'activeTab div-background' : ''}`}
             >
                 <div className="accordion-subheader">
                     <div className="accordion-link">
@@ -28,7 +28,7 @@ const Accordion = ({ activeSection, setActiveSection }) => {
             </section>
             <section 
                 onClick={() => toggleCategory('music')}
-                className={`${activeSection === 'music' ? 'activeTab' : ''}`}
+                className={`${activeSection === 'music' ? 'activeTab div-background' : ''}`}
             >
                 <div className="accordion-subheader">
                     <div className="accordion-link">

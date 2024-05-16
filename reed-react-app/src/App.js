@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme, GlobalStyles } from './Theme';
 import Page from './Page';
+import Contact from './Contact';
 
 function App() {
 
@@ -35,9 +36,9 @@ function App() {
       <div className="App">
         <div className="content">
           <Page />
-          
+          <Contact />
           {/* Light/Dark/Auto mode switch */}
-          <div className='footer'>
+          <div className='footer div-background'>
             <div className="theme-switch">
                 <div className='switch-text light' data-value='light' onClick={()=>toggleTheme('light')}>Light</div>
                 <div className='switch-text dark' data-value='dark' onClick={()=>toggleTheme('dark')}>Dark</div>

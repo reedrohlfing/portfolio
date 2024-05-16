@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import Background from './Background';
 import Music from './Music';
 import Accordion from './Accordion';
-import Contact from './Contact';
 import Title from './Title';
 import Projects from './Projects';
+import Windan from './Windan';
 
 const Page = () => {
     const [activeSection, setActiveSection] = useState('projects');
@@ -12,11 +12,13 @@ const Page = () => {
     const renderSection = () => {
         switch (activeSection) {
           case 'projects':
-            return <Projects />;
+            return <Projects setActiveSection={setActiveSection} />;
           case 'background':
             return <Background />;
           case 'music':
             return <Music />;
+          case 'windan':
+            return <Windan />;
           default:
             return <Projects />;
         }
@@ -51,7 +53,6 @@ const Page = () => {
             <div className="section-content">
               {renderSection()}
             </div>
-            <Contact />
           </nav>
       );
 }

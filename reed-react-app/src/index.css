@@ -102,13 +102,11 @@ h2 {
   margin: 0 auto;
   backdrop-filter: blur(15px);
 }
-
 .accordion-placeholder {
   position: fixed;
   top: 0px;
   width: 100%;
 }
-
 .accordion-subheader {
   margin: 0;
   padding: 7px 17px;
@@ -118,11 +116,9 @@ h2 {
   border-radius: 9px;
   
 }
-
 .activeTab {
   border-radius: 9px;
 }
-
 .accordion-link > h3 {
   font-size: 14px;
   margin: 0;
@@ -130,20 +126,23 @@ h2 {
   text-align: center;
 }
 
+
+#windan {
+  cursor: pointer;
+}
+
+
 .tiles {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 20px 5vw;
-  width: fit-content;
+  padding: 0 10vw;
 }
-
 .tile {
   height: min-content;
-  margin:20px;
+  margin:30px;
   border: 1px solid transparent;
   border-radius: 20px;
 }
-
 .tile-header {
   width: auto;
   position: static;
@@ -151,7 +150,6 @@ h2 {
   border-radius: 20px 20px 0 0;
   text-align: center;
 }
-
 .tile-desc {
   display: grid;
   position: static;
@@ -160,11 +158,11 @@ h2 {
   width:auto;
   text-align: center;
 }
-
 .tile-img {
   max-height: 150px;
   max-width: 300px;
 }
+
 
 .project-responsibilities {
   padding-top: 20px;
@@ -173,25 +171,137 @@ h2 {
   margin: 0;
 }
 
+.project-what {
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 20px;
+}
+.project-why {
+  padding: 0 60px;
+}
+.project-how {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 80px;
+}
+.project-details {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 40px;
+}
+.what-description {
+ padding: 0 40px;
+ text-align: center;
+}
+.problem-solution {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 40px;
+}
+.tools-features-resources {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
+  text-align: center;
+}
+.tools-features-resources > .project-list-div > h2 {
+  padding-bottom: 7px;
+}
+.project-list-div {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.project-list {
+  display: flex;
+  flex-direction: column;
+}
+.project-list > p {
+  padding: 3px 0px;
+  margin: 0;
+}
+.details-section {
+  padding: 15vh 0;
+}
+.product-page-views {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 80%;
+  margin: auto;
+}
+.product-page-views-flipped {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 80%;
+  margin: auto;
+}
+.horizontal-product-view-div {
+  margin: auto;
+  text-align: center;
+}
+.horizontal-product-view {
+  border: 2px solid;
+  border-radius: 5px;
+  width: 80%;
+  margin: auto;
+}
+.vertical-product-view {
+  border: 2px solid;
+  border-radius: 30px;
+  width: 80%;
+  margin: auto;
+}
+.product-tile-views {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: auto;
+}
+.product-tile-view {
+  width: 80%;
+  margin: auto;
+}
+.windan-text {
+  font-size: 30px;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+}
+.windan-subtext {
+  font-size: 12px;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+  color: rgb(0,0,0,0.4);
+}
+.code-view {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: auto;
+}
+.code {
+  margin: auto;
+  width: 100%;
+  border-radius: 15px;
+}
+
 #grad-photo { 
   max-height: 50vh;
   max-width: 50vw;
   border-radius: 20px;
 }
-
 .degree {
   width: auto;
   text-align: center;
   padding: 20px 10vw;
   margin-bottom: 20px;
 }
-
 .corporate-job {
   width: auto;
   padding: 40px 60px;
   margin-bottom: 20px;
 }
-
 .job-overview {
   display: flex;
   justify-content: flex-end;
@@ -199,18 +309,15 @@ h2 {
   align-items: center;
   gap: 20px;
 }
-
 .job-img {
   max-height: 90px;
   max-width: 20vw;
   padding: 5px;
   border-radius: 10px;
 }
-
 .job-title {
   width: 50vw
 }
-
 .job-desc {
   width: 100%;
   align-items: center;
@@ -232,25 +339,6 @@ h2 {
   margin: 0;
   width: 100%;
   z-index: -1;
-}
-
-.skill-title {
-  padding-bottom: 40px;
-  text-align: center;
-}
-
-.skill-list {
-  width: auto;
-  padding: 40px 60px;
-  margin-bottom: 20px;
-}
-.skills {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: center;
-  align-items: end;
-  gap: 30px;
-  padding: 0 10vw;
 }
 
 .sw-img {
@@ -321,7 +409,7 @@ padding: 20px 10vw;
   text-align: center;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1120px) {
   .accordion {
     border-radius: 13px;
     padding: 2px 3px;
@@ -349,14 +437,59 @@ padding: 20px 10vw;
     gap: 10px;
     padding: 0;
   }
+  .project-what {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .project-why {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .project-how {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .project-details {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .problem-solution {
+    grid-template-columns: 1fr;
+  }
+  .tools-features-resources {
+    grid-template-columns: 1fr;
+  }
+  .project-list-div {
+    padding-bottom: 40px;
+  }
   .tiles {
     grid-template-columns: 1fr;
+    width: auto;
   }
   .tile {
     margin: 20px 0;
   }
   .tile-header {
     padding: 40px 10px;
+  }
+  .product-page-views {
+    grid-template-columns: 1fr;
+  }
+  .product-page-views-flipped {
+    grid-template-columns: 1fr;
+  }
+  .product-tile-views {
+    grid-template-columns: 1fr;
+  }
+  .code-view {
+    grid-template-columns: 1fr;
+  }
+  .horizontal-product-view {
+    border-radius: 5px;
+    width: 100%;
+  }
+  .vertical-product-view {
+    border-radius: 25px;
   }
   .spotify-tracklist {
     padding: 20px 10px;

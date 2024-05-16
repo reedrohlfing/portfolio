@@ -14,7 +14,7 @@ const Background = () => {
     return ( 
         <section className="background">
             <h1 className="section-title">Industry</h1>
-            <div className="corporate-job">
+            <div className="corporate-job div-background">
                 <div className="job-overview">
                     <img className="job-img viasat" src='viasat.webp' alt="viasat logo"></img>
                     <div className="job-title">
@@ -34,7 +34,7 @@ const Background = () => {
                 </div>
             </div>
 
-            <div className="corporate-job">
+            <div className="corporate-job div-background">
                 <div className="job-overview">
                     <img className="job-img" src='ppg.png' alt="ppg logo"></img>
                     <div className="job-title">
@@ -52,13 +52,13 @@ const Background = () => {
                 </div>
             </div>
             <h1 className="section-title">Education</h1>
-            <div className="degree">
+            <div className="degree div-background">
                 <img className="tile-img" src='SDSU_seal.png' alt="sdsu seal"></img>
                 <h2>San Diego State University</h2>
                 <h3>Electrical Engineering</h3>
                 <p className='sub-text'>Emphasis in Communication Systems</p>
             </div>
-            <div className="degree">
+            <div className="degree div-background">
                 <div>
                     <img id="grad-photo" src='grad-photo.jpg' alt="grad"></img>
                 </div>
@@ -70,7 +70,7 @@ const Background = () => {
                             <img className="tile-img" src='sdsu-research.jpg' alt="sdsu-research"></img>
                         </div>
                     </a>
-                    <div className="tile-desc">
+                    <div className="tile-desc div-background">
                         <h2>SDSU Research Foundation</h2>
                         <h3>2020 IoT Intern</h3>
                         <p>Programmed Bluetooth Low Energy (BLE) beacons in embedded C, and correlated RSSI values to physical distance by performing distance and interference testing between beacons. Wrote comprehensive report in IEEE format, and presented findings at 2021 Research Symposium. MCU’s are expected to help primatologists better understand chimpanzee behavior at an animal sanctuary in Congo, Africa.</p>
@@ -83,7 +83,7 @@ const Background = () => {
                             <img className="tile-img" src='aer.png' alt="aer"></img>
                         </div>
                     </a>
-                    <div className="tile-desc">
+                    <div className="tile-desc div-background">
                         <h2>AER Senior Design Project</h2>
                         <h3>Team Lead</h3>
                         <p>Collaborated with the Aztec Electric Racing club to build a motor controller for their electric race car.</p>
@@ -96,7 +96,7 @@ const Background = () => {
                             <img className="tile-img" src='mslc.png' alt="mslc"></img>
                         </div>
                     </a>
-                    <div className="tile-desc">
+                    <div className="tile-desc div-background">
                         <h2>SDSU Math and Stats Learning Center</h2>
                         <h3>Tutor and TA</h3>
                         <p>Tutored students in a variety of courses, ranging from College Algebra to Calculus III. Engaged students by leading weekly problem-solving discussions to promote understanding and collaboration.</p>
@@ -109,7 +109,7 @@ const Background = () => {
                             <img className="tile-img" src='greenfest-logo-white.png' alt="greenfest"></img>
                         </div>
                     </a>
-                    <div className="tile-desc">
+                    <div className="tile-desc div-background">
                         <h2>GreenFest</h2>
                         <h3>Committee Member</h3>
                         <p>Volunteered to help plan and coordinate the 2017 GreenFest concert.</p>

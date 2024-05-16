@@ -8,7 +8,7 @@ export const darkTheme = {
     navbarTitle: 'white',
     navbarBackground: '#141414',
     subTitle: 'white',
-    accordionBackground: 'rgb(255,255,255,0.2)',
+    accordionBackground: 'rgb(0,0,0,0.4)',
     subText: 'rgb(255,255,255,0.6)',
     tileBackground: '#141414',
     sdsuRed: '#a7192f',
@@ -34,7 +34,7 @@ export const lightTheme = {
     navbarTitle: 'black',
     navbarBackground: '#f5f5f7',
     subTitle: 'black',
-    accordionBackground: 'rgb(0,0,0,0.1)',
+    accordionBackground: 'rgb(255,255,255,0.4)',
     subText: 'rgb(0,0,0,0.4)',
     tileBackground: '#f5f5f7',
     sdsuRed: '#a7192f',
@@ -71,19 +71,11 @@ export const GlobalStyles = createGlobalStyle`
   p {
     color: ${props => props.theme.colors.navbarTitle};
   }
+  .div-background {
+    background-color: ${props => props.theme.colors.tileBackground};
+  }
   .main-title {
     color: ${props => props.theme.colors.navbarTitle};
-  }
-  // .section-title {
-  //   background-color: ${props => props.theme.colors.tileBackground};
-  // }
-  .accordion {
-    // background-color: ${props => props.theme.colors.accordionBackground};
-    // border: 1px solid ${props => props.theme.colors.navbarTitle};
-  }
-  .activeTab {
-    background-color: ${props => props.theme.colors.tileBackground};
-    // border: 1px solid ${props => props.theme.colors.navbarTitle};
   }
   .activeTab > .accordion-subheader > .accordion-link > h3 {
     color: ${props => props.theme.colors.subTitle};
@@ -91,12 +83,9 @@ export const GlobalStyles = createGlobalStyle`
   .button:hover {
     border-color: ${props => props.theme.colors.button};
   }
-  // .accordion-subheader > .accordion-link > h3 {
-  //   color: ${props => props.theme.colors.background};
-  // }
-  // .accordion-subheader > .accordion-link > h3: hover {
-  //   color: ${props => props.theme.colors.button};
-  // }
+  .accordion {
+    background-color: ${props => props.theme.colors.accordionBackground};
+  }
   .accordion-subheader: hover {
     background-color: ${props => props.theme.colors.navbarBackground};
   }
@@ -108,33 +97,14 @@ export const GlobalStyles = createGlobalStyle`
     padding: 7px;
     margin-bottom: 25px;
   }
-
-  .degree {
-    background-color: ${props => props.theme.colors.tileBackground};
-  }
-  .corporate-job {
-    background-color: ${props => props.theme.colors.tileBackground};
-  }
   .tile:hover {
     border-color: ${props => props.theme.colors.button};
-  }
-  .tile-desc {
-    background-color: ${props => props.theme.colors.tileBackground};
   }
   .sub-text {
     font-size: 12px;
     color: ${props => props.theme.colors.subText};
   }
-  .skill-list {
-    background-color: ${props => props.theme.colors.tileBackground};
-  }
-  .spotify-tracklist {
-    background-color: ${props => props.theme.colors.tileBackground};
-  }
-  .contact {
-    background-color: ${props => props.theme.colors.tileBackground};
-  }
-  .link {
+  .link:hover {
     color: ${props => props.theme.colors.button};
   }
   #sdsu-red {
@@ -174,7 +144,18 @@ export const GlobalStyles = createGlobalStyle`
     color: white;
     background-color: ${props => props.theme.colors.toggle};
   }
-  .footer {
-    background-color: ${props => props.theme.colors.tileBackground};
+  .project-windan {
+    background-color: ${props => props.theme.colors.windanMarket};
+    color: white;
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+  .project-windan-light {
+    background-color: white;
+    color: black;
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+  .code {
+    background-color: ${props => props.theme.colors.windanMarket};
+    color: white;
   }
 `;

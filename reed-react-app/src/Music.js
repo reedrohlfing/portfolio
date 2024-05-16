@@ -2,7 +2,7 @@ const Music = () => {
     return ( 
         <section className="music">
             <h1 className="section-title">Sound</h1>
-            <div className="spotify-tracklist">
+            <div className="spotify-tracklist div-background">
                 <iframe className="spotify-track" title="1" src="https://open.spotify.com/embed/track/5g2sPpVq3hdk9ZuMfABrts?utm_source=generator" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 <iframe className="spotify-track" title="9" src="https://open.spotify.com/embed/track/5cgB9o3llPiEDWVE9qhqWB?utm_source=generator" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 <iframe className="spotify-track" title="3" src="https://open.spotify.com/embed/track/40eiz1003cXrXFRnMtBvIU?utm_source=generator" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
