@@ -2,7 +2,7 @@ const Windan = () => {
     return ( 
         <section className="windan">
             <a href="https://windanmarket.com/" target="_blank" rel="noreferrer">
-                <h1 className="section-title link" href="https://windanmarket.com/">Windan Market Concept &#x2197;</h1>
+                <h1 className="section-title link">Windan Market Concept &#x2197;</h1>
             </a>
             <div className="project-what div-background">
                 <h1>What?</h1>
@@ -80,16 +80,16 @@ const Windan = () => {
                 <div className="details-section">
                     <div className="product-page-views">
                         <div className="horizontal-product-view-div">
-                            <img src="product_page.PNG" alt="product-page" className="horizontal-product-view project-windan"></img>
+                            <img src="product_page.PNG" alt="product-page" className="horizontal-product-view project-windan" decoding="async"></img>
                             <p className="project-windan windan-text">Wall to wall product images fill the width of the screen, maximizing product detail.</p>
                         </div>
-                        <img src="product_page_mobile.PNG" alt="product-page-mobile" className="vertical-product-view project-windan"></img>
+                        <img src="product_page_mobile.PNG" alt="product-page-mobile" className="vertical-product-view project-windan" decoding="async"></img>
                     </div>
                 </div>
 
                 <div className="details-section">
                     <div className="product-tile-views">
-                        <img src="product_tile_saved.PNG" alt="product-tile-saved" className="product-tile-view"></img>
+                        <img src="product_tile_saved.PNG" alt="product-tile-saved" className="product-tile-view" decoding="async" ></img>
                         <p className="project-windan windan-text">The check mark in the lower right corner provides the user with visual feedback for products they've saved.</p>
                     </div>
                 </div>
@@ -97,10 +97,10 @@ const Windan = () => {
                 <div className="details-section">
                     <div className="product-page-views">
                         <div className="horizontal-product-view-div">
-                            <img src="product_description.PNG" alt="product-desc" className="horizontal-product-view project-windan"></img>
+                            <img src="product_description.PNG" alt="product-desc" className="horizontal-product-view project-windan" decoding="async" ></img>
                             <p className="project-windan windan-text">Saved products get added to a "wishlist", where a description from the brand is displayed.</p>
                         </div>
-                        <img src="product_description_mobile.PNG" alt="product-desc-mobile" className="vertical-product-view project-windan"></img>
+                        <img src="product_description_mobile.PNG" alt="product-desc-mobile" className="vertical-product-view project-windan" decoding="async" ></img>
                     </div>
                 </div>
                 
@@ -110,10 +110,10 @@ const Windan = () => {
 
                 <div className="details-section">
                     <div className="product-page-views-flipped">
-                        <img src="product_filters_mobile.PNG" alt="product-filters-mobile" className="vertical-product-view project-windan"></img>
+                        <img src="product_filters_mobile.PNG" alt="product-filters-mobile" className="vertical-product-view project-windan" decoding="async" ></img>
                         <div className="horizontal-product-view-div">
                             <p className="project-windan windan-text">The drop-down menu lets users categorize and filter content quickly.</p>
-                            <img src="product_filters.PNG" alt="product-filters" className="horizontal-product-view project-windan"></img>
+                            <img src="product_filters.PNG" alt="product-filters" className="horizontal-product-view project-windan" decoding="async" ></img>
                         </div>
                     </div>
                 </div>
@@ -121,47 +121,47 @@ const Windan = () => {
                 <div className="details-section">
                     <div className="product-page-views">
                         <div className="horizontal-product-view-div">
-                            <img src="product_search.PNG" alt="product-search" className="horizontal-product-view project-windan"></img>
+                            <img src="product_search.PNG" alt="product-search" className="horizontal-product-view project-windan" decoding="async" ></img>
                             <p className="project-windan windan-text">The nav bar turns into a search bar for space efficiency.</p>
                         </div>
-                        <img src="product_search_mobile.PNG" alt="product-search-mobile" className="vertical-product-view project-windan"></img>
+                        <img src="product_search_mobile.PNG" alt="product-search-mobile" className="vertical-product-view project-windan" decoding="async" ></img>
                     </div>
                 </div>
 
             </div>
 
-            <div className="project-details project-windan-light">
-                <h1 className="project-windan-light">Technical Elements</h1>
+            <div className="project-details">
+                <h1>Technical Elements</h1>
 
                 <div className="details-section">
                     <div className="code-view">
-                        <img src="wishlist_code.PNG" alt="wishlist-code" className="code"></img>
-                        <p className="project-windan-light windan-text">Saved products are stored locally, eliminating the need for database storage, while still ensuring users can access their wishlist.</p>
+                        <img src="wishlist_code.PNG" alt="wishlist-code" className="code" decoding="async" ></img>
+                        <p className="windan-text">Saved products are stored locally, eliminating the need for database storage, while still ensuring users can access their wishlist.</p>
                         
                     </div>
                 </div>
 
                 <div className="details-section">
                     <div className="code-view">
-                        <img src="navbar_flex_code.PNG" alt="wishlist-code" className="code"></img>
-                        <p className="project-windan-light windan-text">On larger screens, the navigation panel shrinks once the user begins to scroll.</p>
+                        <img src="navbar_flex_code.PNG" alt="wishlist-code" className="code" decoding="async" ></img>
+                        <p className="windan-text">On larger screens, the navigation panel shrinks once the user begins to scroll.</p>
                     </div>
                 </div>
 
                 <div className="details-section">
                     <div className="code-view">
-                        <img src="load_more_code.PNG" alt="wishlist-code" className="code"></img>
-                        <p className="project-windan-light windan-text">At the bottom of the product grid, a load more button allows the user to load more content without having to navigate to a new page.</p>
+                        <img src="load_more_code.PNG" alt="wishlist-code" className="code" decoding="async" ></img>
+                        <p className="windan-text">At the bottom of the product grid, a load more button allows the user to load more content without having to navigate to a new page.</p>
                     </div>
                 </div>
 
                 <div className="details-section">
-                    <p className="project-windan-light windan-text">
+                    <p className="windan-text">
                         The site is hosted on 
                         <a href="https://render.com/" target="_blank" rel="noreferrer" className="link"> Render&#x2197;</a>
                         , a free web service provider for developers. Render seamlessly integrates with GitHub, allowing for effortless deployment and automatic updates with every code change.
                     </p>
-                    <p className="windan-subtext">I am unaffiliated with Render. This is non-sponsored content.</p>
+                    <p className="windan-subtext sub-text">I am unaffiliated with Render. This is non-sponsored content.</p>
                 </div>
 
             </div>

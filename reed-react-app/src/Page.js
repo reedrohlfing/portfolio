@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import Background from './Background';
 import Music from './Music';
 import Accordion from './Accordion';
-import Title from './Title';
 import Projects from './Projects';
 import Windan from './Windan';
+import Greenhouse from './Greenhouse';
 
 const Page = () => {
     const [activeSection, setActiveSection] = useState('projects');
@@ -19,6 +19,8 @@ const Page = () => {
             return <Music />;
           case 'windan':
             return <Windan />;
+          case 'greenhouse':
+            return <Greenhouse />;
           default:
             return <Projects />;
         }
@@ -40,9 +42,17 @@ const Page = () => {
       window.addEventListener('scroll', handleScroll);
     }, []);
 
+    function handleNameClick() {
+      window.location.reload();
+    }
+
     return (
           <nav className="page">
-            <Title />
+            <nav className="main-title">
+              <div className="name-background">
+                  <p className='name-text' onClick={handleNameClick}>Reed Rohlfing</p>
+              </div>
+            </nav>
             <div className='accordion-og'>
               <Accordion activeSection={activeSection} setActiveSection={setActiveSection} />
             </div>

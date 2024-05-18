@@ -11,7 +11,7 @@ const Projects = ({ setActiveSection }) => {
                 <div className="tile">
                     {/* <a href="/"> */}
                         <div className='tile-header' id="five">
-                            <img className="tile-img" src='FIVE-title.gif' alt="five"></img>
+                            <img className="tile-img" src='FIVE-title.gif' alt="five" decoding="async" ></img>
                         </div>
                     {/* </a> */}
                     <div className="tile-desc div-background">
@@ -24,9 +24,24 @@ const Projects = ({ setActiveSection }) => {
                         <p className="sub-text">React Native, Figma, Expo Go</p>
                     </div>
                 </div>
+
+                <div className="tile">
+                    <div className='tile-header' id="greenhouse" onClick={() => toggleCategory('greenhouse')}>
+                        <img className="tile-img" src='g-icon-white.png' alt="greenhouse logo" decoding="async" ></img>
+                    </div>
+                    <div className="tile-desc div-background">
+                        <h2>Greenhouse Proposal</h2>
+                        <div className="project-responsibilities">
+                            <h3>Software Developer</h3>
+                        </div>
+                        <p className="sub-text">UX Design, JavaScript, React</p>
+                        <p className="sub-text">I am unaffiliated with Greenhouse.</p>
+                    </div>
+                </div>
+
                 <div className="tile">
                     <div className='tile-header' id="windan" onClick={() => toggleCategory('windan')}>
-                        <img className="tile-img" src='wm_logo_white.png' alt="windan market logo"></img>
+                        <img className="tile-img" src='wm_logo_white.png' alt="windan market logo" decoding="async" ></img>
                     </div>
                     <div className="tile-desc div-background">
                         <h2>Windan Market Concept</h2>
@@ -36,6 +51,7 @@ const Projects = ({ setActiveSection }) => {
                         <p className="sub-text">JavaScript, HTML, CSS</p>
                     </div>
                 </div>
+
             </div>
         </ section>
     );

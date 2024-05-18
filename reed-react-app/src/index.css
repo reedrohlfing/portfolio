@@ -126,11 +126,9 @@ h2 {
   text-align: center;
 }
 
-
-#windan {
-  cursor: pointer;
+#five {
+  cursor: auto;
 }
-
 
 .tiles {
   display: grid;
@@ -144,6 +142,7 @@ h2 {
   border-radius: 20px;
 }
 .tile-header {
+  cursor: pointer;
   width: auto;
   position: static;
   padding: 40px;
@@ -193,6 +192,13 @@ h2 {
 .what-description {
  padding: 0 40px;
  text-align: center;
+}
+.why-description {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom:40px;
+  text-align: center;
+  font-size: 20px;
 }
 .problem-solution {
   display: grid;
@@ -272,7 +278,6 @@ h2 {
   margin: auto;
   padding: 40px;
   text-align: center;
-  color: rgb(0,0,0,0.4);
 }
 .code-view {
   display: grid;

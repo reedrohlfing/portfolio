@@ -16,7 +16,7 @@ const Background = () => {
             <h1 className="section-title">Industry</h1>
             <div className="corporate-job div-background">
                 <div className="job-overview">
-                    <img className="job-img viasat" src='viasat.webp' alt="viasat logo"></img>
+                    <img className="job-img viasat" src='viasat.webp' alt="viasat logo" decoding="async" ></img>
                     <div className="job-title">
                         <h2>Viasat</h2>
                         <h3>Systems Integration and Test Engineer</h3>
@@ -36,7 +36,7 @@ const Background = () => {
 
             <div className="corporate-job div-background">
                 <div className="job-overview">
-                    <img className="job-img" src='ppg.png' alt="ppg logo"></img>
+                    <img className="job-img" src='ppg.png' alt="ppg logo" decoding="async" ></img>
                     <div className="job-title">
                         <h2>PPG Aerospace</h2>
                         <h3>R&D Engineering Intern</h3>
@@ -53,21 +53,21 @@ const Background = () => {
             </div>
             <h1 className="section-title">Education</h1>
             <div className="degree div-background">
-                <img className="tile-img" src='SDSU_seal.png' alt="sdsu seal"></img>
+                <img className="tile-img" src='SDSU_seal.png' alt="sdsu seal" decoding="async" ></img>
                 <h2>San Diego State University</h2>
                 <h3>Electrical Engineering</h3>
                 <p className='sub-text'>Emphasis in Communication Systems</p>
             </div>
             <div className="degree div-background">
                 <div>
-                    <img id="grad-photo" src='grad-photo.jpg' alt="grad"></img>
+                    <img id="grad-photo" src='grad-photo.jpg' alt="grad" decoding="async" ></img>
                 </div>
             </div>
             <div className="tiles">   
                 <div className="tile">
                     <a href="https://foundation.sdsu.edu/" target="_blank" rel="noreferrer">
                         <div className='tile-header' id="sdsu-red">
-                            <img className="tile-img" src='sdsu-research.jpg' alt="sdsu-research"></img>
+                            <img className="tile-img" src='sdsu-research.jpg' alt="sdsu-research" decoding="async" ></img>
                         </div>
                     </a>
                     <div className="tile-desc div-background">
@@ -80,7 +80,7 @@ const Background = () => {
                 <div className="tile">
                     <a href="https://aztecelectricracing.sdsu.edu/" target="_blank" rel="noreferrer">
                         <div className='tile-header' id="aer">
-                            <img className="tile-img" src='aer.png' alt="aer"></img>
+                            <img className="tile-img" src='aer.png' alt="aer" decoding="async" ></img>
                         </div>
                     </a>
                     <div className="tile-desc div-background">
@@ -93,7 +93,7 @@ const Background = () => {
                 <div className="tile">
                     <a href="https://mslc.sdsu.edu/" target="_blank" rel="noreferrer">
                         <div className='tile-header' id="mslc">
-                            <img className="tile-img" src='mslc.png' alt="mslc"></img>
+                            <img className="tile-img" src='mslc.png' alt="mslc" decoding="async" ></img>
                         </div>
                     </a>
                     <div className="tile-desc div-background">
@@ -106,7 +106,7 @@ const Background = () => {
                 <div className="tile">
                     <a href="https://as.sdsu.edu/greenfest/" target="_blank" rel="noreferrer">
                         <div className='tile-header' id="greenfest-green">
-                            <img className="tile-img" src='greenfest-logo-white.png' alt="greenfest"></img>
+                            <img className="tile-img" src='greenfest-logo-white.png' alt="greenfest" decoding="async" ></img>
                         </div>
                     </a>
                     <div className="tile-desc div-background">

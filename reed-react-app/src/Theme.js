@@ -16,6 +16,8 @@ export const darkTheme = {
     mslc: '#c4c4c4',
     greenfestGreen: '#9DBD6A',
     windanMarket: '#33333b',
+    greenhouse: '#008560',
+    greenhouseDark: '#16372c',
     five: '#4800FF',
     inProgFont: 'black',
     inProgBackground: '#04CA00',
@@ -42,6 +44,8 @@ export const lightTheme = {
     mslc: '#c4c4c4',
     greenfestGreen: '#9DBD6A',
     windanMarket: '#33333b',
+    greenhouse: '#008560',
+    greenhouseDark: '#16372c',
     five: '#4800FF',
     inProgFont: 'white',
     inProgBackground: '#04CA00',
@@ -69,6 +73,9 @@ export const GlobalStyles = createGlobalStyle`
     color: ${props => props.theme.colors.navbarTitle};
   }
   p {
+    color: ${props => props.theme.colors.navbarTitle};
+  }
+  div {
     color: ${props => props.theme.colors.navbarTitle};
   }
   .div-background {
@@ -125,6 +132,9 @@ export const GlobalStyles = createGlobalStyle`
   #five {
     background-color: ${props => props.theme.colors.five};
   }
+  #greenhouse {
+    background-color: ${props => props.theme.colors.greenhouse};
+  }
   .viasat {
     background-color: ${props => props.theme.pictures.viasat};
   }
@@ -149,10 +159,10 @@ export const GlobalStyles = createGlobalStyle`
     color: white;
     border-color: rgba(255, 255, 255, 0.6);
   }
-  .project-windan-light {
-    background-color: white;
-    color: black;
-    border-color: rgba(0, 0, 0, 0.3);
+  .project-greenhouse {
+    background-color: ${props => props.theme.colors.greenhouseDark};
+    color: white;
+    border-color: rgba(255, 255, 255, 0.6);
   }
   .code {
     background-color: ${props => props.theme.colors.windanMarket};
