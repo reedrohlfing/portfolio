@@ -50,7 +50,7 @@ const Greenhouse = () => {
             Greenhouse &#x2197;
           </a>
         </h3>
-        <p className="windan-subtext sub-text">
+        <p className="windan-subtext sub-text" style={{ padding: 0 }}>
           I am unaffiliated with Greenhouse.
         </p>
       </div>
