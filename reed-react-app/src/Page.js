@@ -5,6 +5,7 @@ import Accordion from "./Accordion";
 import Projects from "./Projects";
 import Windan from "./Windan";
 import Greenhouse from "./Greenhouse";
+import Five from "./Five";
 
 const Page = () => {
   const [activeSection, setActiveSection] = useState("projects");
@@ -17,6 +18,8 @@ const Page = () => {
         return <Background />;
       case "music":
         return <Music />;
+      case "five":
+        return <Five />;
       case "windan":
         return <Windan />;
       case "greenhouse":

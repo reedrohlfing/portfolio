@@ -11,6 +11,7 @@ export const darkTheme = {
     accordionBackground: "rgb(0,0,0,0.4)",
     subText: "rgb(255,255,255,0.6)",
     tileBackground: "#141414",
+    tileShadow: "rgb(76, 169, 255, 0.4)",
     sdsuRed: "#a7192f",
     aer: "#231f20",
     mslc: "#c4c4c4",
@@ -39,6 +40,7 @@ export const lightTheme = {
     accordionBackground: "rgb(255,255,255,0.4)",
     subText: "rgb(0,0,0,0.4)",
     tileBackground: "#f5f5f7",
+    tileShadow: "rgb(0, 0, 0, 0.3)",
     sdsuRed: "#a7192f",
     aer: "#231f20",
     mslc: "#c4c4c4",
@@ -102,7 +104,7 @@ export const GlobalStyles = createGlobalStyle`
     margin-bottom: 25px;
   }
   .tile:hover {
-    border-color: ${(props) => props.theme.colors.button};
+    box-shadow: 0px 0px 50px ${(props) => props.theme.colors.tileShadow};
   }
   .sub-text {
     font-size: 12px;
@@ -170,6 +172,10 @@ export const GlobalStyles = createGlobalStyle`
   .code {
     background-color: ${(props) => props.theme.colors.windanMarket};
     color: white;
+  }
+  .code:hover {
+    box-shadow: 0px 0px 50px ${(props) => props.theme.colors.tileShadow};
+    cursor: pointer;
   }
   .scroll-to-top:hover {
     background-color: ${(props) => props.theme.colors.accordionBackground};

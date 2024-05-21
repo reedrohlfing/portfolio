@@ -8,9 +8,8 @@ const Projects = ({ setActiveSection }) => {
     <section className="projects">
       <h1 className="section-title">Projects</h1>
       <div className="tiles">
-        <div className="tile">
-          {/* <a href="/"> */}
-          <div className="tile-header" id="five">
+        <div className="tile" id="five">
+          <div className="tile-header" onClick={() => toggleCategory("five")}>
             <img
               className="tile-img"
               src="FIVE-title.gif"
@@ -18,7 +17,6 @@ const Projects = ({ setActiveSection }) => {
               decoding="async"
             ></img>
           </div>
-          {/* </a> */}
           <div className="tile-desc div-background">
             <h2 id="in-progress">In Progress</h2>
             <h2>.FIVE</h2>
@@ -30,10 +28,9 @@ const Projects = ({ setActiveSection }) => {
           </div>
         </div>
 
-        <div className="tile">
+        <div className="tile" id="greenhouse">
           <div
             className="tile-header"
-            id="greenhouse"
             onClick={() => toggleCategory("greenhouse")}
           >
             <img
@@ -53,12 +50,8 @@ const Projects = ({ setActiveSection }) => {
           </div>
         </div>
 
-        <div className="tile">
-          <div
-            className="tile-header"
-            id="windan"
-            onClick={() => toggleCategory("windan")}
-          >
+        <div className="tile" id="windan">
+          <div className="tile-header" onClick={() => toggleCategory("windan")}>
             <img
               className="tile-img"
               src="wm_logo_white.png"

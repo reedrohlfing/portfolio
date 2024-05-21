@@ -102,17 +102,6 @@ const Background = () => {
       </div>
       <h1 className="section-title">Education</h1>
       <div className="degree div-background">
-        <img
-          className="tile-img"
-          src="SDSU_seal.png"
-          alt="sdsu seal"
-          decoding="async"
-        ></img>
-        <h2>San Diego State University</h2>
-        <h3>Electrical Engineering</h3>
-        <p className="sub-text">Emphasis in Communication Systems</p>
-      </div>
-      <div className="degree div-background">
         <div>
           <img
             id="grad-photo"
@@ -121,7 +110,21 @@ const Background = () => {
             decoding="async"
           ></img>
         </div>
+        <div className="degree-info">
+          <img
+            className="tile-img"
+            src="SDSU_seal.png"
+            alt="sdsu seal"
+            decoding="async"
+          ></img>
+          <div className="degree-text">
+            <h2>San Diego State University</h2>
+            <h3>Electrical Engineering</h3>
+            <p className="sub-text">Emphasis in Communication Systems</p>
+          </div>
+        </div>
       </div>
+
       <div className="tiles">
         <div className="tile">
           <a

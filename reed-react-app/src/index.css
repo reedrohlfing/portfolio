@@ -144,10 +144,6 @@ h2 {
   text-align: center;
 }
 
-#five {
-  cursor: auto;
-}
-
 .tiles {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -156,7 +152,6 @@ h2 {
 .tile {
   height: min-content;
   margin: 30px;
-  border: 1px solid transparent;
   border-radius: 20px;
 }
 .tile-header {
@@ -308,6 +303,17 @@ h2 {
   border-radius: 15px;
 }
 
+.live-figma-div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 40%;
+  height: 80vh;
+  justify-content: center;
+  justify-self: center;
+  margin: auto;
+}
+
 .learn-button {
   border: 1px solid;
   width: fit-content;
@@ -321,10 +327,25 @@ h2 {
   border-radius: 20px;
 }
 .degree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: auto;
-  text-align: center;
-  padding: 20px 10vw;
+  padding: 10vh 5vw;
   margin-bottom: 20px;
+}
+.degree-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 40px;
+}
+.degree-text {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .corporate-job {
   width: auto;
@@ -544,6 +565,25 @@ h2 {
   }
   .vertical-product-view {
     border-radius: 25px;
+  }
+  .live-figma-div {
+    width: 100%;
+  }
+  .degree {
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .degree-text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .degree-info {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #grad-photo {
+    width: 100%;
+    max-height: 80vh;
+    max-width: 80vw;
   }
   .corporate-job {
     padding: 40px;

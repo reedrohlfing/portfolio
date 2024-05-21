@@ -25,11 +25,11 @@ const Contact = () => {
           <h2 className="name">Resume</h2>
           <a
             className="link"
-            href="https://drive.google.com/uc?export=download&id=1Lv7nX1YFuRRJ5PlWumife6fKR4cLm0S-"
+            href="https://drive.google.com/uc?export=download&id=13XpSF0JTNTXyWOtK4sva4znJVgI5H09z"
           >
             <p className="link">download &#x2197;</p>
           </a>
-          <p className="sub-text">last updated: 03-26-2024</p>
+          <p className="sub-text">last updated: 05-21-2024</p>
         </div>
       </div>
     </section>
