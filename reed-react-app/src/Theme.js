@@ -6,7 +6,8 @@ export const darkTheme = {
     button: "#4ca9ff",
     toggle: "#0071e3",
     navbarTitle: "white",
-    navbarBackground: "#141414",
+    navbarTitleLight: "rgb(255,255,255,0.7)",
+    navbarBackground: "rgb(20,20,20)",
     subTitle: "white",
     accordionBackground: "rgb(0,0,0,0.4)",
     subText: "rgb(255,255,255,0.6)",
@@ -35,7 +36,8 @@ export const lightTheme = {
     button: "#4ca9ff",
     toggle: "#0071e3",
     navbarTitle: "black",
-    navbarBackground: "#f5f5f7",
+    navbarTitleLight: "rgb(0,0,0,0.6)",
+    navbarBackground: "rgb(245,245,247)",
     subTitle: "black",
     accordionBackground: "rgb(255,255,255,0.4)",
     subText: "rgb(0,0,0,0.4)",
@@ -61,6 +63,9 @@ export const lightTheme = {
 export const GlobalStyles = createGlobalStyle`
   html {
     background-color: ${(props) => props.theme.colors.background};
+  }
+  .lightText {
+    color: ${(props) => props.theme.colors.navbarTitleLight};
   }
   h1 {
     color: ${(props) => props.theme.colors.navbarTitle};
@@ -95,6 +100,9 @@ export const GlobalStyles = createGlobalStyle`
   .accordion-subheader: hover {
     background-color: ${(props) => props.theme.colors.navbarBackground};
   }
+  // .about {
+  //   color: ${(props) => props.theme.colors.button};
+  // }
   #in-progress {
     font-size: 14px;
     border-radius: 11px;

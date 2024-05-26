@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Bantayog-light";
+  src: url("../public/fonts/Bantayog/Bantayog-Light.otf");
+}
+.bantayog-font {
+  font-family: "Bantayog-light";
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -24,7 +32,7 @@ a:hover {
 
 h1 {
   font-size: 48px;
-  padding: 40px;
+  padding: 40px 10vw;
   margin: 0;
 }
 
@@ -62,6 +70,9 @@ h2 {
 .hide {
   display: none;
 }
+.invisible {
+  visibility: hidden;
+}
 
 .flex {
   display: flex;
@@ -73,6 +84,16 @@ h2 {
 
 .transparent {
   color: transparent;
+}
+
+.grid-background {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 1px, transparent 1px);
+  background-size: 50px 50px;
 }
 
 .main-title {
@@ -98,10 +119,6 @@ h2 {
   cursor: pointer;
 }
 
-.download-resume {
-  margin: 5px;
-}
-
 .content {
   display: flex;
   flex-direction: column;
@@ -118,8 +135,9 @@ h2 {
   border-radius: 11px;
   justify-content: center;
   padding: 2px 3px;
-  margin: 0 auto;
-  backdrop-filter: blur(15px);
+  margin: 12px auto;
+  backdrop-filter: blur(30px);
+  gap: 2px;
 }
 .accordion-placeholder {
   position: fixed;
@@ -138,10 +156,20 @@ h2 {
   border-radius: 9px;
 }
 .accordion-link > h3 {
-  font-size: 14px;
+  font-size: 18px;
   margin: 0;
   font-weight: 500;
   text-align: center;
+  padding: 5px 10px;
+}
+
+.about {
+  margin: auto 0;
+  padding: 10vh 10vw;
+  min-height: 50vh;
+}
+.about > h1 {
+  font-size: 56px;
 }
 
 .tiles {
@@ -426,11 +454,14 @@ h2 {
 
 .contact {
   margin-top: 20px;
+  padding-top: 20px;
 }
 
 .contact-variables {
   display: flex;
   flex-direction: row;
+  padding-left: 10vw;
+  padding-right: 10vw;
   padding-bottom: 30px;
 }
 
@@ -481,6 +512,9 @@ h2 {
 }
 
 @media screen and (max-width: 1120px) {
+  h1 {
+    padding: 40px 5vw;
+  }
   .close-button {
     font-size: 24px;
     padding: 15px;
@@ -494,6 +528,7 @@ h2 {
   .accordion {
     border-radius: 13px;
     padding: 2px 3px;
+    margin: 8px auto;
   }
   .accordion-subheader {
     margin: 0;
@@ -507,6 +542,12 @@ h2 {
     margin: 0;
     font-weight: 500;
     text-align: center;
+  }
+  .about {
+    padding: 5vh 5vw;
+  }
+  .about > h1 {
+    font-size: 37px;
   }
   .desc-list {
     width: 100%;
@@ -598,6 +639,8 @@ h2 {
   .contact-variables {
     align-items: center;
     flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
   .contact-info {
     padding: 20px 10px;

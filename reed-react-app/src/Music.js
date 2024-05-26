@@ -2,7 +2,7 @@ const Music = () => {
   return (
     <section className="music">
       <h1 className="section-title">Sound</h1>
-      <div className="spotify-tracklist div-background">
+      <div className="spotify-tracklist">
         <iframe
           className="spotify-track"
           title="1"

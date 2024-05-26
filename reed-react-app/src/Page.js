@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import About from "./About";
 import Background from "./Background";
 import Music from "./Music";
 import Accordion from "./Accordion";
@@ -8,10 +9,12 @@ import Greenhouse from "./Greenhouse";
 import Five from "./Five";
 
 const Page = () => {
-  const [activeSection, setActiveSection] = useState("projects");
+  const [activeSection, setActiveSection] = useState("about");
 
   const renderSection = () => {
     switch (activeSection) {
+      case "about":
+        return <About />;
       case "projects":
         return <Projects setActiveSection={setActiveSection} />;
       case "background":
@@ -36,12 +39,15 @@ const Page = () => {
       const accordionPlaceholder = document.querySelector(
         ".accordion-placeholder"
       );
+      const accordion = document.querySelector(".accordion-og");
       const accordionDistance =
         document.querySelector(".main-title").scrollHeight;
       if (window.scrollY > accordionDistance) {
-        accordionPlaceholder.classList.remove("hide");
+        accordion.classList.add("invisible");
+        accordionPlaceholder.classList.remove("invisible");
       } else {
-        accordionPlaceholder.classList.add("hide");
+        accordionPlaceholder.classList.add("invisible");
+        accordion.classList.remove("invisible");
       }
     };
 
@@ -49,14 +55,15 @@ const Page = () => {
   }, []);
 
   function handleNameClick() {
-    window.location.reload();
+    setActiveSection("about");
+    window.scrollTo(0, 0);
   }
 
   return (
     <nav className="page">
       <nav className="main-title">
         <div className="name-background">
-          <p className="name-text" onClick={handleNameClick}>
+          <p className="name-text bantayog-font" onClick={handleNameClick}>
             Reed Rohlfing
           </p>
         </div>
@@ -67,7 +74,7 @@ const Page = () => {
           setActiveSection={setActiveSection}
         />
       </div>
-      <div className="accordion-placeholder hide">
+      <div className="accordion-placeholder invisible">
         <Accordion
           activeSection={activeSection}
           setActiveSection={setActiveSection}
