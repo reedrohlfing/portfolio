@@ -101,6 +101,7 @@ h2 {
   justify-content: center;
   align-items: center;
   min-height: 60px;
+  padding-top: 16px;
 }
 
 .name-background {
@@ -135,7 +136,7 @@ h2 {
   border-radius: 11px;
   justify-content: center;
   padding: 2px 3px;
-  margin: 12px auto;
+  margin: 0 auto;
   backdrop-filter: blur(30px);
   gap: 2px;
 }
@@ -143,6 +144,7 @@ h2 {
   position: fixed;
   top: 0px;
   width: 100%;
+  margin-top: 12px;
 }
 .accordion-subheader {
   margin: 0;
@@ -528,7 +530,9 @@ h2 {
   .accordion {
     border-radius: 13px;
     padding: 2px 3px;
-    margin: 8px auto;
+  }
+  .accordion-placeholder {
+    margin-top: 8px;
   }
   .accordion-subheader {
     margin: 0;
