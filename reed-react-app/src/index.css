@@ -232,7 +232,7 @@ h2 {
   padding-top: 40px;
 }
 .what-description {
-  padding: 0 40px;
+  padding: 0 10vw;
   text-align: center;
 }
 .why-description {
@@ -245,12 +245,12 @@ h2 {
 .problem-solution {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0 40px;
+  padding: 0 10vw;
 }
 .tools-features-resources {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 0;
+  padding: 0 10vw;
   text-align: center;
 }
 .tools-features-resources > .project-list-div > h2 {
