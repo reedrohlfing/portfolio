@@ -25,7 +25,7 @@ const Contact = () => {
           <h2 className="name">Resume</h2>
           <a
             className="link"
-            href="https://drive.google.com/uc?export=download&id=13XpSF0JTNTXyWOtK4sva4znJVgI5H09z"
+            href="https://drive.google.com/uc?export=download&id=1Amhm-hC0gtYXPosglMK39-Q2fP2yBz3Z"
           >
             <p className="link">download &#x2197;</p>
           </a>
