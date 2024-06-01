@@ -5,7 +5,7 @@ const About = () => {
       <h1>
         I'm Reed, a Systems Engineer that enjoys discovering how technology
         works. I have a background in electrical engineering and SATCOM, but
-        recently started to explore software development and UI design.
+        recently started to explore product development.
       </h1>
       <h1 className="lightText">
         Use the navbar above to get a bit more familiar with my experience, or
