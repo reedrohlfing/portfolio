@@ -362,8 +362,11 @@ h2 {
   justify-content: center;
   align-items: center;
   width: auto;
-  padding: 10vh 5vw;
+  padding: 5vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
   margin-bottom: 20px;
+  border-radius: 20px;
 }
 .degree-info {
   display: flex;
@@ -616,6 +619,8 @@ h2 {
   }
   .degree {
     grid-template-columns: 1fr 1.5fr;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
   .degree-text {
     padding-left: 10px;
@@ -624,6 +629,8 @@ h2 {
   .degree-info {
     padding-left: 0;
     padding-right: 0;
+    flex-direction: column;
+    text-align: center;
   }
   #grad-photo {
     width: 100%;

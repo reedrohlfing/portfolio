@@ -63,7 +63,7 @@ const Page = () => {
     <nav className="page">
       <nav className="main-title">
         <div className="name-background">
-          <p className="name-text bantayog-font" onClick={handleNameClick}>
+          <p className="name-text" onClick={handleNameClick}>
             Reed Rohlfing
           </p>
         </div>
