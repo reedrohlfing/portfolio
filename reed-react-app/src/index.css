@@ -342,6 +342,8 @@ h2 {
   justify-content: center;
   justify-self: center;
   margin: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .learn-button {

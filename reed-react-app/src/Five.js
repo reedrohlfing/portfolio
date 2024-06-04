@@ -2,42 +2,25 @@ const Five = () => {
   return (
     <section className="five">
       <h1 className="section-title">.FIVE App</h1>
-      {/* <div className="project-what div-background">
+      <div className="project-what div-background">
         <h1>What?</h1>
         <h3 className="what-description">
-          I proposed an Applicant Portal for
-          <a
-            href="https://greenhouse.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="link"
-          >
-            {" "}
-            Greenhouse &#x2197;
-          </a>
+          I'm creating a social media app that prioritizes the use of the 0.5x
+          lens on the iPhone camera.
         </h3>
-        <p className="windan-subtext sub-text" style={{ padding: 0 }}>
-          I am unaffiliated with Greenhouse.
-        </p>
       </div>
 
       <div className="project-why div-background">
         <h1>Why?</h1>
         <div className="why-description">
           <p>
-            Greenhouse is a growing leader in hiring and onboarding software.
-            They have helped revolutionize the application process for many
-            companies, as well as their applicants. By removing the need for a
-            login, Greenhouse has drastically reduced the amount of time taken
-            for an applicant to apply to a position.
+            While another social media app isn't quite what the world needs, the
+            goal of the project is solely for me to learn more about app /
+            product design.
           </p>
           <p>
-            The fall back of not creating a company-specific login is that
-            candidates can't see the status of their application after they
-            apply. To remedy this, I designed an Applicant Portal in theme with
-            the Greenhouse style. Below, you'll get a glimpse of how an
-            applicant could track the status of their applications
-            industry-wide.
+            Plus, if I can design an app that is more fun and less addictive
+            than other alternatives. It's a win win!
           </p>
         </div>
       </div>
@@ -49,18 +32,18 @@ const Five = () => {
             <h2>Tools</h2>
             <li className="project-list">
               <p>JavaScript</p>
-              <p>React</p>
-              <p>Material UI</p>
-              <p>Google Maps API</p>
+              <p>React Native</p>
+              <p>Expo</p>
             </li>
           </div>
           <div className="project-list-div">
             <h2>Features</h2>
             <li className="project-list">
-              <p>Login Demo</p>
-              <p>Data Grid</p>
-              <p>Maps & Markers</p>
-              <p>Filtering</p>
+              <p>No follower count</p>
+              <p>No infinite scroll</p>
+              <p>More profile info</p>
+              <p>Circular design</p>
+              <p>Focus on real relationships</p>
             </li>
           </div>
           <div className="project-list-div">
@@ -72,7 +55,7 @@ const Five = () => {
             </li>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className="live-figma-div">
         <h2>Figma Prototype</h2>
