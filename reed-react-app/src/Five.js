@@ -33,6 +33,7 @@ const Five = () => {
             <li className="project-list">
               <p>JavaScript</p>
               <p>React Native</p>
+              <p>Figma</p>
               <p>Expo</p>
             </li>
           </div>
