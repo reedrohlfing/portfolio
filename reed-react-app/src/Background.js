@@ -34,38 +34,35 @@ const Background = () => {
         <div className={`job-desc ${showViasatDesc ? "flex" : "hide"}`}>
           <h3 className="desc-list">July 2021 - November 2023</h3>
           <p className="desc-list">
-            Supported continuous development of software feature updates for the
-            CBM-400 product line, ultimately becoming the SME for the EBEM
-            waveform on CBM-400 modem.
+            Subject Matter Expert for the EBEM and LinkWay waveforms on the
+            CBM-400 modem.
           </p>
           <p className="desc-list">
-            Spearheaded multiple test efforts for the embeddable modem card
-            stack, ensuring vendors’ implementation met system requirements.
+            Accelerated time to release by automating front-end testing of a
+            Network Control Center web interface by leveraging Selenium and
+            PyTest.
           </p>
           <p className="desc-list">
-            Testing included in-lab point-to-point and full-mesh network
-            topologies, as well as fully integrated over-the-air assemblies to
-            verify satellite data transmission.
+            Streamlined parallel product testing by collaborating with the test
+            team to develop a Python test automation framework, bridging the gap
+            between physical test devices and automated scripts.
           </p>
           <p className="desc-list">
-            Served as a liaison between customers and software team to address
-            product-level concerns, facilitating open communication and
-            collaboration to deliver effective solutions.
+            Reduced mis-integration frustrations by partnering with design and
+            engineering teams at industry leading companies (Airbus, L3Harris,
+            etc.) to certify their custom designs and ensure seamless
+            integration of the CBM-400 card stack.
           </p>
           <p className="desc-list">
-            Utilized Selenium to automate front-end testing of a Network Control
-            Center web interface; a first-time implementation for this team /
-            product.
+            Ensured success of a critical software feature update by co-leading
+            a comprehensive test effort, aligning with key stakeholders,
+            executing test cases, presenting findings / recommendations, and
+            documenting results.
           </p>
           <p className="desc-list">
-            Collaborated with test team to develop a Python test automation
-            framework, streamlining product testing and ultimately bridging the
-            gap between physical test devices and automated scripts.
-          </p>
-          <p className="desc-list">
-            Automated FIPS certification testing for a data encryption device,
-            overhauling its verification procedure to ensure future audit
-            readiness and product compliance.
+            Testing included point-to-point and full-mesh network topologies to
+            verify over-the-air satellite data transmission, operational
+            temperature, encryption, spurious emission, transmit power, and BER.
           </p>
         </div>
       </div>
@@ -179,8 +176,9 @@ const Background = () => {
             <h2>AER Senior Design Project</h2>
             <h3>Team Lead</h3>
             <p>
-              Collaborated with the Aztec Electric Racing club to build a motor
-              controller for their electric race car.
+              Led a senior design group of five engineers, teaming up with the
+              Aztec Electric Racing club to develop a custom motor controller
+              for their formula SAE electric race car under a budget of $5,000.
             </p>
           </div>
         </div>
