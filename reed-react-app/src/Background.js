@@ -1,6 +1,11 @@
 import { useState } from "react";
 
 const Background = () => {
+  const [showBagerDesc, setShowBagerDesc] = useState(false);
+  const toggleBagerDesc = () => {
+    setShowBagerDesc(!showBagerDesc);
+  };
+
   const [showViasatDesc, setShowViasatDesc] = useState(false);
   const toggleViasatDesc = () => {
     setShowViasatDesc(!showViasatDesc);
@@ -14,6 +19,46 @@ const Background = () => {
   return (
     <section className="background">
       <h1 className="section-title">Industry</h1>
+
+      <div className="corporate-job div-background">
+        <div className="job-overview">
+          <img
+            className="job-img bager"
+            src="bagersales.jpg"
+            alt="bager logo"
+            decoding="async"
+          ></img>
+          <div className="job-title">
+            <h2>Bager Sales</h2>
+            <h3>Sales Engineer</h3>
+            <p className="learn-button" onClick={toggleBagerDesc}>
+              {showBagerDesc ? "Learn Less \u2191" : "Learn More \u2193"}
+            </p>
+          </div>
+        </div>
+
+        <div className={`job-desc ${showBagerDesc ? "flex" : "hide"}`}>
+          <h3 className="desc-list">September 2024 - Present</h3>
+          <p className="desc-list">
+            Grow territory sales to 130% in 24Q4 by implementing regional sales
+            strategy for new and existing customers, upselling/cross-selling,
+            evaluating market trends, and analyzing competitors.
+          </p>
+          <p className="desc-list">
+            Manage a diverse account base of 50+ active B2B relationships in the
+            semiconductor and power technology sectors, identifying and
+            showcasing technical solutions for power electronics, memory,
+            wireless, and SoC applications.
+          </p>
+          <p className="desc-list">
+            Execute full sales cycle through product fit research, tailored cold
+            outreach, marketing material creation, successful demos, price
+            negotiation, and post-sale support including quarterly check-ins and
+            EOL/roadmap awareness.
+          </p>
+        </div>
+      </div>
+
       <div className="corporate-job div-background">
         <div className="job-overview">
           <img
@@ -41,6 +86,11 @@ const Background = () => {
             Accelerated time to release by automating front-end testing of a
             Network Control Center web interface by leveraging Selenium and
             PyTest.
+          </p>
+          <p className="desc-list">
+            Managed bugs and ticketing through Jira; collaborated with SW
+            engineers, management, and product design team to prioritize pending
+            issues, define bug-fix timelines, and provide temporary workarounds.
           </p>
           <p className="desc-list">
             Streamlined parallel product testing by collaborating with the test
@@ -91,13 +141,12 @@ const Background = () => {
             on mylar using photolithography.
           </p>
           <p className="desc-list">
-            Findings were published internally, presented to executives within
-            the aerospace research division, and are patented.
+            Collaborated with technical director and manufacturing to research
+            current factors affecting the development process.
           </p>
           <p className="desc-list">
-            Gained hands-on experience with R&D lab equipment, including optical
-            and scanning electron microscope, sputtering vacuum chamber,
-            precipitation static testing, and electroplating.
+            Established the minimum electroplate timing needed to form a
+            feasible grid; utilizing SEM to measure grid thickness.
           </p>
         </div>
       </div>

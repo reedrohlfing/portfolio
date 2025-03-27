@@ -37,7 +37,7 @@ const Greenhouse = () => {
 
       <h1 className="section-title">Greenhouse Proposal</h1>
       <div className="project-what div-background">
-        <h1>What?</h1>
+        <h1>What</h1>
         <h3 className="what-description">
           I proposed an Applicant Portal for
           <a
@@ -56,28 +56,28 @@ const Greenhouse = () => {
       </div>
 
       <div className="project-why div-background">
-        <h1>Why?</h1>
+        <h1>Why</h1>
         <div className="why-description">
           <p>
             Greenhouse is a growing leader in hiring and onboarding software.
             They have helped revolutionize the application process for many
-            companies, as well as their applicants. By removing the need for a
-            login, Greenhouse has drastically reduced the amount of time taken
-            for an applicant to apply to a position.
+            companies, as well as their applicants. By removing the need for an
+            applicant to create an account at the time of application,
+            Greenhouse has drastically reduced the amount of time taken for an
+            applicant to apply to a role.
           </p>
           <p>
-            The fall back of not creating a company-specific login is that
-            candidates can't see the status of their application after they
-            apply. To remedy this, I designed an Applicant Portal in theme with
-            the Greenhouse style. Below, you'll get a glimpse of how an
-            applicant could track the status of their applications
-            industry-wide.
+            The fall back of removing the login feature is that candidates can't
+            see the status of their application after they've applied. To remedy
+            this, I designed an Applicant Portal in theme with the Greenhouse
+            style. Below, you'll get a glimpse of how an applicant could track
+            the status of their applications industry-wide.
           </p>
         </div>
       </div>
 
       <div className="project-how div-background">
-        <h1>How?</h1>
+        <h1>How</h1>
         <div className="tools-features-resources">
           <div className="project-list-div">
             <h2>Tools</h2>
@@ -153,7 +153,7 @@ const Greenhouse = () => {
               decoding="async"
             ></img>
             <p className="project-greenhouse windan-text">
-              The Job dashboard tab showcases an overview of recent application
+              The Job dashboard showcases an overview of recent application
               status', location, date applied, and similar metrics.
             </p>
           </div>

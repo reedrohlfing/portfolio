@@ -3,30 +3,33 @@ const Five = () => {
     <section className="five">
       <h1 className="section-title">.FIVE App</h1>
       <div className="project-what div-background">
-        <h1>What?</h1>
+        <h1>What</h1>
         <h3 className="what-description">
-          I'm creating a social media app that prioritizes the use of the 0.5x
-          lens on the iPhone camera.
+          I'm creating a web app to explore the boundary of social media and
+          dating.
         </h3>
       </div>
 
       <div className="project-why div-background">
-        <h1>Why?</h1>
+        <h1>Why</h1>
         <div className="why-description">
           <p>
-            While another social media app isn't quite what the world needs, the
-            goal of the project is solely for me to learn more about app /
-            product design.
+            Many friends have used Instagram as a form of introduction to a
+            mutual relationship. I see an opportunity to blur the lines between
+            social media and a dating app. Why not be able to see your friends
+            content and find mutual friends just outside your circle? This app
+            aims to bring new life to the ad-filled Instagram and the demeaning
+            swipe of Hinge.
           </p>
           <p>
-            Plus, if I can design an app that is more fun and less addictive
-            than other alternatives. It's a win win!
+            Plus, there hasn't been a social media app that's solely focused on
+            the 0.5x fisheye lens for iPhone, hence .FIVE.
           </p>
         </div>
       </div>
 
       <div className="project-how div-background">
-        <h1>How?</h1>
+        <h1>How</h1>
         <div className="tools-features-resources">
           <div className="project-list-div">
             <h2>Tools</h2>
@@ -44,7 +47,7 @@ const Five = () => {
               <p>No infinite scroll</p>
               <p>More profile info</p>
               <p>Circular design</p>
-              <p>Focus on real relationships</p>
+              <p>No comments, just private messaging</p>
             </li>
           </div>
           <div className="project-list-div">

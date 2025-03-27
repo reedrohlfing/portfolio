@@ -39,15 +39,14 @@ const Windan = () => {
         <h1 className="section-title link">Windan Market Concept &#x2197;</h1>
       </a>
       <div className="project-what div-background">
-        <h1>What?</h1>
+        <h1>What</h1>
         <h3 className="what-description">
-          I designed and deployed a menswear concept shop from scratch, despite
-          having no prior web-development experience.
+          I designed and deployed a menswear concept shop from scratch.
         </h3>
       </div>
 
       <div className="project-why div-background">
-        <h1>Why?</h1>
+        <h1>Why</h1>
         <div className="problem-solution">
           <div className="project-list-div">
             <h2>User Problems</h2>
@@ -73,7 +72,7 @@ const Windan = () => {
       </div>
 
       <div className="project-how div-background">
-        <h1>How?</h1>
+        <h1>How</h1>
         <div className="tools-features-resources">
           <div className="project-list-div">
             <h2>Tools</h2>
