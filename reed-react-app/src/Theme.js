@@ -12,7 +12,7 @@ export const darkTheme = {
     accordionBackground: "rgb(0,0,0,0.4)",
     subText: "rgb(255,255,255,0.6)",
     tileBackground: "#141414",
-    tileShadow: "rgb(76, 169, 255, 0.4)",
+    tileShadow: "rgba(255,255,255,0.2)",
     sdsuRed: "#a7192f",
     aer: "#231f20",
     mslc: "#c4c4c4",
