@@ -12,7 +12,7 @@ export const darkTheme = {
     accordionBackground: "rgb(0,0,0,0.4)",
     subText: "rgb(255,255,255,0.6)",
     tileBackground: "#141414",
-    tileShadow: "rgb(76, 169, 255, 0.4)",
+    tileShadow: "rgba(255, 255, 255, 0.4)",
     sdsuRed: "#a7192f",
     aer: "#231f20",
     mslc: "#c4c4c4",
@@ -96,9 +96,11 @@ export const GlobalStyles = createGlobalStyle`
   }
   .accordion {
     background-color: ${(props) => props.theme.colors.accordionBackground};
+    border: 0.5px dashed white;
   }
   .accordion-subheader: hover {
-    background-color: ${(props) => props.theme.colors.navbarBackground};
+    //background-color: ${(props) => props.theme.colors.navbarBackground};
+    background-color: ${(props) => props.theme.colors.button};
   }
   // .about {
   //   color: ${(props) => props.theme.colors.button};
@@ -112,7 +114,7 @@ export const GlobalStyles = createGlobalStyle`
     margin-bottom: 25px;
   }
   .tile:hover {
-    box-shadow: 0px 0px 50px ${(props) => props.theme.colors.tileShadow};
+    border: 1px solid ${(props) => props.theme.colors.tileShadow};
   }
   .sub-text {
     font-size: 12px;
@@ -185,8 +187,13 @@ export const GlobalStyles = createGlobalStyle`
     box-shadow: 0px 0px 50px ${(props) => props.theme.colors.tileShadow};
     cursor: pointer;
   }
+  .scroll-to-top {
+    backdrop-filter: blur(30px);
+    border: 0.5px dashed white;
+  }
   .scroll-to-top:hover {
-    background-color: ${(props) => props.theme.colors.accordionBackground};
+    background-color: ${(props) => props.theme.colors.tileBackground};
+    border: 0.5px dashed transparent;
   }
   .close-button {
     background-color: ${(props) => props.theme.colors.accordionBackground};

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./Theme";
 import Page from "./Page";
@@ -7,12 +7,13 @@ import Contact from "./Contact";
 function App() {
   const port = process.env.PORT || 6001;
   const [theme, setTheme] = useState("auto");
+  const [showSplash, setShowSplash] = useState(true);
+  const splashRef = useRef(null);
 
   function scrollToTop() {
     window.scrollTo(0, 0);
   }
 
-  // Function to toggle between light and dark themes
   const toggleTheme = (newTheme) => {
     setTheme(newTheme);
     let themeSwitches = document.querySelectorAll(".switch-text");
@@ -27,58 +28,93 @@ function App() {
     });
   };
 
-  // Determine the preferred theme based on user preference or default to light theme
   const prefersDarkMode =
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const preferredTheme =
-    theme === "auto"
-      ? prefersDarkMode
-        ? darkTheme
-        : lightTheme
-      : theme === "dark"
-      ? darkTheme
-      : lightTheme;
+  const preferredTheme = darkTheme;
+
+  useEffect(() => {
+    const splashEl = splashRef.current;
+    const rows = 4;
+    const cols = 4;
+    const boxes = [];
+
+    // Create grid and track coordinates
+    for (let row = 0; row < rows; row++) {
+      for (let col = 0; col < cols; col++) {
+        const box = document.createElement("div");
+        box.classList.add("grid-box");
+        splashEl.appendChild(box);
+        boxes.push({ box, row, col });
+      }
+    }
+
+    // Group boxes by diagonal (row + col)
+    const diagonalMap = new Map();
+    boxes.forEach(({ box, row, col }) => {
+      const key = row + col;
+      if (!diagonalMap.has(key)) diagonalMap.set(key, []);
+      diagonalMap.get(key).push(box);
+    });
+
+    const diagonalKeys = Array.from(diagonalMap.keys()).sort((a, b) => a - b);
+    const delayBetweenDiagonals = 100;
+
+    // Step 1: Diagonal flash in
+    diagonalKeys.forEach((key, i) => {
+      setTimeout(() => {
+        diagonalMap.get(key).forEach((box) => {
+          box.classList.add("flash");
+          setTimeout(() => box.classList.remove("flash"), 100);
+        });
+      }, i * delayBetweenDiagonals);
+    });
+
+    // Step 2: Fill permanent white diagonally in reverse
+    diagonalKeys
+      .slice()
+      .reverse()
+      .forEach((key, i) => {
+        setTimeout(() => {
+          diagonalMap.get(key).forEach((box) => {
+            box.classList.add("flash-perm");
+          });
+        }, (diagonalKeys.length + i) * delayBetweenDiagonals);
+      });
+
+    // Step 3: Fade all to black
+    const fadeToBlackStart =
+      delayBetweenDiagonals * diagonalKeys.length * 2 + 300;
+
+    setTimeout(() => {
+      boxes.forEach(({ box }) => {
+        box.classList.remove("flash-perm");
+        box.classList.add("fade-to-black");
+      });
+    }, fadeToBlackStart);
+
+    // Step 4: Remove splash after fade
+    const splashEnd = fadeToBlackStart + 600;
+
+    const timer = setTimeout(() => {
+      setShowSplash(false);
+    }, splashEnd);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <ThemeProvider theme={preferredTheme}>
       <GlobalStyles />
       <div className="App">
-        <div className="content">
+        {showSplash && <div ref={splashRef} className="splash-grid"></div>}
+        <div className="content grid-background">
           <Page />
-          <h1
-            className="scroll-to-top div-background link"
-            onClick={scrollToTop}
-          >
+          <h1 className="scroll-to-top link" onClick={scrollToTop}>
             &#x2191;
           </h1>
           <Contact />
-          {/* Light/Dark/Auto mode switch */}
-          <div className="footer div-background">
-            <div className="theme-switch">
-              <div
-                className="switch-text light"
-                data-value="light"
-                onClick={() => toggleTheme("light")}
-              >
-                Light
-              </div>
-              <div
-                className="switch-text dark"
-                data-value="dark"
-                onClick={() => toggleTheme("dark")}
-              >
-                Dark
-              </div>
-              <div
-                className="switch-text auto"
-                data-value="auto"
-                onClick={() => toggleTheme("auto")}
-              >
-                Auto
-              </div>
-            </div>
-          </div>
+          <div className="footer div-background"></div>
         </div>
       </div>
     </ThemeProvider>

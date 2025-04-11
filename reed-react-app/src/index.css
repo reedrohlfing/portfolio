@@ -32,7 +32,6 @@ a:hover {
 
 h1 {
   font-size: 48px;
-  padding: 40px 10vw;
   margin: 0;
 }
 
@@ -57,7 +56,6 @@ h2 {
   font-size: 48px;
   margin: 0;
   padding: 25px;
-  border-radius: 25px;
   border: none;
   text-align: end;
   right: 20px;
@@ -89,11 +87,40 @@ h2 {
 .grid-background {
   background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.2) 1px,
+      rgba(255, 255, 255, 0.2) 1px,
       transparent 1px
     ),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 1px, transparent 1px);
-  background-size: 50px 50px;
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+  background-size: 25vw 25vh;
+}
+
+.splash-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  z-index: 9999;
+  background: transparent;
+}
+
+.grid-box {
+  background: black;
+  transition: 0.2s;
+  border: solid 0.5px black;
+}
+
+.grid-box.flash {
+  background: white;
+}
+.grid-box.flash-perm {
+  background: white;
+}
+.grid-box.fade-to-black {
+  background: transparent;
 }
 
 .main-title {
@@ -101,7 +128,7 @@ h2 {
   justify-content: center;
   align-items: center;
   min-height: 60px;
-  padding-top: 16px;
+  padding-top: 5vh;
 }
 
 .name-background {
@@ -133,12 +160,14 @@ h2 {
 .accordion {
   display: flex;
   width: fit-content;
-  border-radius: 11px;
   justify-content: center;
   padding: 2px 3px;
   margin: 0 auto;
   backdrop-filter: blur(30px);
   gap: 2px;
+}
+.accordion-og {
+  margin-bottom: 5vh;
 }
 .accordion-placeholder {
   position: fixed;
@@ -152,10 +181,6 @@ h2 {
   align-items: center;
   text-align: center;
   cursor: pointer;
-  border-radius: 9px;
-}
-.activeTab {
-  border-radius: 9px;
 }
 .accordion-link > h3 {
   font-size: 18px;
@@ -167,36 +192,36 @@ h2 {
 
 .about {
   margin: auto 0;
-  padding: 10vh 10vw;
+  padding: 0 25vw 10vh 25vw;
   min-height: 50vh;
 }
 .about > h1 {
-  font-size: 56px;
+  font-size: 32px;
+  padding: 40px 0vw;
+}
+
+.section-title {
+  padding: 40px 25vw;
 }
 
 .tiles {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 0 10vw;
+  padding: 0 25vw;
 }
 .tile {
   height: min-content;
-  margin: 30px;
-  border-radius: 20px;
+  margin: 10vh 0;
 }
 .tile-header {
   cursor: pointer;
   width: auto;
   position: static;
   padding: 40px;
-  border-radius: 20px 20px 0 0;
   text-align: center;
 }
 .tile-desc {
   display: grid;
   position: static;
   padding: 40px 40px 40px 40px;
-  border-radius: 0 0 20px 20px;
   width: auto;
   text-align: center;
 }
@@ -289,13 +314,11 @@ h2 {
 }
 .horizontal-product-view {
   border: 2px solid;
-  border-radius: 15px;
   width: 80%;
   margin: auto;
 }
 .vertical-product-view {
   border: 2px solid;
-  border-radius: 30px;
   width: 80%;
   margin: auto;
 }
@@ -330,7 +353,6 @@ h2 {
 .code {
   margin: auto;
   width: 100%;
-  border-radius: 15px;
 }
 
 .live-figma-div {
@@ -350,13 +372,11 @@ h2 {
   border: 1px solid;
   width: fit-content;
   padding: 7px 14px;
-  border-radius: 12px;
 }
 
 #grad-photo {
   max-height: 50vh;
   max-width: 50vw;
-  border-radius: 20px;
 }
 .degree {
   display: flex;
@@ -368,7 +388,6 @@ h2 {
   margin-left: 10vw;
   margin-right: 10vw;
   margin-bottom: 20px;
-  border-radius: 20px;
 }
 .degree-info {
   display: flex;
@@ -386,7 +405,6 @@ h2 {
   width: auto;
   padding: 40px 60px;
   margin: 20px 10vw;
-  border-radius: 20px;
 }
 .job-overview {
   display: flex;
@@ -400,7 +418,6 @@ h2 {
   max-height: 90px;
   max-width: 20vw;
   padding: 5px;
-  border-radius: 10px;
 }
 .job-title {
   display: flex;
@@ -440,18 +457,9 @@ h2 {
   width: 15vw;
 }
 
-.spotify-tracklist {
-  padding: 20px 10vw;
-}
-
-.spotify-track {
-  border-radius: 12px;
-}
-
 .scroll-to-top {
   align-self: flex-end;
   text-align: center;
-  border-radius: 25px;
   margin: 20px;
   margin-right: 40px;
   padding: 25px;
@@ -462,6 +470,9 @@ h2 {
 .contact {
   margin-top: 20px;
   padding-top: 20px;
+}
+.contact > .section-title {
+  padding: 40px 10vw;
 }
 
 .contact-variables {
@@ -487,7 +498,6 @@ h2 {
   display: inline-flex;
   padding: 1px;
   border: 1px solid;
-  border-radius: 12px;
 }
 
 .content input[type="radio"] {
@@ -502,7 +512,6 @@ h2 {
   padding: 1px 6px;
   min-width: 42px;
   border: 1px solid transparent;
-  border-radius: 10px;
   text-align: center;
   font-size: 12px;
   font-weight: 400;
@@ -525,7 +534,6 @@ h2 {
   .close-button {
     font-size: 24px;
     padding: 15px;
-    border-radius: 15px;
     right: 10px;
     margin-top: 10px;
   }
@@ -533,7 +541,6 @@ h2 {
     background-color: transparent;
   }
   .accordion {
-    border-radius: 13px;
     padding: 2px 3px;
   }
   .accordion-placeholder {
@@ -544,7 +551,6 @@ h2 {
     padding: 10px 17px;
   }
   .activeTab {
-    border-radius: 11px;
   }
   .accordion-link > h3 {
     font-size: 14px;
@@ -553,10 +559,10 @@ h2 {
     text-align: center;
   }
   .about {
-    padding: 5vh 5vw;
+    padding: 5vh 1vw;
   }
   .about > h1 {
-    font-size: 37px;
+    font-size: 36px;
   }
   .desc-list {
     width: 100%;
@@ -610,11 +616,9 @@ h2 {
     grid-template-columns: 1fr;
   }
   .horizontal-product-view {
-    border-radius: 10px;
     width: 100%;
   }
   .vertical-product-view {
-    border-radius: 25px;
   }
   .live-figma-div {
     width: 100%;
@@ -648,11 +652,9 @@ h2 {
     padding: 40px;
     margin: 20px 5vw;
   }
-  .spotify-tracklist {
-    padding: 20px 10px;
-  }
   .scroll-to-top {
-    margin-right: 20px;
+    margin-right: 2.5vw;
+    padding: 7vw 5vw;
   }
   .contact-variables {
     align-items: center;

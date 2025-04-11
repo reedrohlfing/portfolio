@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import About from "./About";
 import Background from "./Background";
-import Music from "./Music";
 import Accordion from "./Accordion";
 import Projects from "./Projects";
 import Windan from "./Windan";
@@ -19,8 +18,6 @@ const Page = () => {
         return <Projects setActiveSection={setActiveSection} />;
       case "background":
         return <Background />;
-      case "music":
-        return <Music />;
       case "five":
         return <Five />;
       case "windan":

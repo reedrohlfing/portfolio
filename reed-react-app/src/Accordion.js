@@ -30,18 +30,6 @@ const Accordion = ({ activeSection, setActiveSection }) => {
           </div>
         </div>
       </section>
-      <section
-        onClick={() => toggleCategory("music")}
-        className={`${
-          activeSection === "music" ? "activeTab div-background" : ""
-        }`}
-      >
-        <div className="accordion-subheader">
-          <div className="accordion-link">
-            <h3>sound</h3>
-          </div>
-        </div>
-      </section>
     </nav>
   );
 };
